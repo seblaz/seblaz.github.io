@@ -16,6 +16,7 @@ deploy:
 
 notifications:
   email:
-    - sebastian.blazquez96@gmail.com
+    recipients:
+      - sebastian.blazquez96@gmail.com
     on_success: change
     on_failure: always
