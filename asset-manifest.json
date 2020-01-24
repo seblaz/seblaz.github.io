@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.js": "/static/js/main.9223b721.chunk.js",
-    "main.js.map": "/static/js/main.9223b721.chunk.js.map",
+    "main.js": "/static/js/main.74c70c57.chunk.js",
+    "main.js.map": "/static/js/main.74c70c57.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.327900a2.js",
     "runtime-main.js.map": "/static/js/runtime-main.327900a2.js.map",
     "static/css/2.8271af8e.chunk.css": "/static/css/2.8271af8e.chunk.css",
-    "static/js/2.cd4d3a96.chunk.js": "/static/js/2.cd4d3a96.chunk.js",
-    "static/js/2.cd4d3a96.chunk.js.map": "/static/js/2.cd4d3a96.chunk.js.map",
+    "static/js/2.4ce1e10c.chunk.js": "/static/js/2.4ce1e10c.chunk.js",
+    "static/js/2.4ce1e10c.chunk.js.map": "/static/js/2.4ce1e10c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.97e1eab68ee3bb7cb512786a585cbfb0.js": "/precache-manifest.97e1eab68ee3bb7cb512786a585cbfb0.js",
+    "precache-manifest.fd66696122bf7e467e2cc290ed4492e0.js": "/precache-manifest.fd66696122bf7e467e2cc290ed4492e0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8271af8e.chunk.css.map": "/static/css/2.8271af8e.chunk.css.map",
-    "static/js/2.cd4d3a96.chunk.js.LICENSE": "/static/js/2.cd4d3a96.chunk.js.LICENSE",
+    "static/js/2.4ce1e10c.chunk.js.LICENSE": "/static/js/2.4ce1e10c.chunk.js.LICENSE",
     "static/media/SB.7277acbd.svg": "/static/media/SB.7277acbd.svg",
-    "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
+    "static/media/cuadernos ya.jpg": "/static/media/cuadernos ya.f260072a.jpg",
+    "static/media/final fight.png": "/static/media/final fight.612f91a8.png",
+    "static/media/github icon.svg": "/static/media/github icon.62d6bccb.svg",
+    "static/media/matrix.jpg": "/static/media/matrix.f3aacf1b.jpg",
+    "static/media/predicting-user-conversions.jpg": "/static/media/predicting-user-conversions.fdb10b2f.jpg",
+    "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2",
+    "static/media/winautomation.svg": "/static/media/winautomation.ce213866.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.327900a2.js",
     "static/css/2.8271af8e.chunk.css",
-    "static/js/2.cd4d3a96.chunk.js",
-    "static/js/main.9223b721.chunk.js"
+    "static/js/2.4ce1e10c.chunk.js",
+    "static/js/main.74c70c57.chunk.js"
   ]
 }

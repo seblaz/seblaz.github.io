@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "285268c4b8960afcace04cb976fd9ec9",
+    "revision": "d45fe1eed24e215159a727da4a43b86a",
     "url": "/index.html"
   },
   {
-    "revision": "5053a81a1ae0cf10c71d",
+    "revision": "efdfccfbfffc4acd73ee",
     "url": "/static/css/2.8271af8e.chunk.css"
   },
   {
-    "revision": "5053a81a1ae0cf10c71d",
-    "url": "/static/js/2.cd4d3a96.chunk.js"
+    "revision": "efdfccfbfffc4acd73ee",
+    "url": "/static/js/2.4ce1e10c.chunk.js"
   },
   {
     "revision": "5396de0513fe8132c046e37d8d61f727",
-    "url": "/static/js/2.cd4d3a96.chunk.js.LICENSE"
+    "url": "/static/js/2.4ce1e10c.chunk.js.LICENSE"
   },
   {
-    "revision": "25cc509a58f3e503e7ee",
-    "url": "/static/js/main.9223b721.chunk.js"
+    "revision": "716239d094b5cbbc6105",
+    "url": "/static/js/main.74c70c57.chunk.js"
   },
   {
     "revision": "f5a8fc87174c6ae0b1f7",
@@ -26,6 +26,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7277acbdbe2006c8d21ed08f54fff390",
     "url": "/static/media/SB.7277acbd.svg"
+  },
+  {
+    "revision": "f260072a5d8a326e38ff91586e754041",
+    "url": "/static/media/cuadernos ya.f260072a.jpg"
+  },
+  {
+    "revision": "612f91a8e54a57d15c7f31ddc5cf0959",
+    "url": "/static/media/final fight.612f91a8.png"
+  },
+  {
+    "revision": "62d6bccb57da8ba03ebc9fc7538fb462",
+    "url": "/static/media/github icon.62d6bccb.svg"
+  },
+  {
+    "revision": "f3aacf1ba7823cb01c23259bd9c99a04",
+    "url": "/static/media/matrix.f3aacf1b.jpg"
+  },
+  {
+    "revision": "fdb10b2f50a08fe81067edbf5bf64dad",
+    "url": "/static/media/predicting-user-conversions.fdb10b2f.jpg"
   },
   {
     "revision": "5cb7edfceb233100075dc9a1e12e8da3",
@@ -122,5 +142,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ebf6d1640ccddb99fb49f73c052c55a8",
     "url": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  {
+    "revision": "ce213866641d3bbe19f66d7289589937",
+    "url": "/static/media/winautomation.ce213866.svg"
   }
 ]);
