@@ -1,11 +1,18 @@
 import React from 'react';
 import Theme from 'app/Theme';
 import Router from 'app/Router';
+import Header from 'sections/Header';
+import Footer from 'sections/Footer';
+import Content from 'sections/Content';
 
 export default () => {
   return (
     <Theme>
-      <Router/>
+      <Router>
+        <Header/>
+        <Content/>
+        <Footer/>
+      </Router>
     </Theme>
   )
 }

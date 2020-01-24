@@ -2,10 +2,15 @@ import React from 'react';
 import {ReactComponent as SB} from 'assets/img/SB.svg'
 import {makeStyles} from '@material-ui/styles';
 import Typography from '@material-ui/core/Typography';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   wrapper: {
     display: 'flex'
+  },
+  link: {
+    display: 'flex',
+    textDecoration: 'none'
   },
   logo: {
     minHeight: 50,
@@ -30,10 +35,12 @@ export default () => {
 
   return (
     <div className={classes.wrapper}>
-      <SB className={classes.logo}/>
-      <div className={classes.nameWrapper}>
-        <Typography variant="h4" className={classes.name}>Seblaz</Typography>
-      </div>
+      <Link to='/' className={classes.link}>
+        <SB className={classes.logo}/>
+        <div className={classes.nameWrapper}>
+          <Typography variant='h4' className={classes.name}>Seblaz</Typography>
+        </div>
+      </Link>
     </div>
   )
 }

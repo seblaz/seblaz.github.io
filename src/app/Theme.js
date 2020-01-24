@@ -38,7 +38,8 @@ export default ({children}) => {
             main: '#B531CC',
             color: Color('#B531CC')
           },
-          type: themeMode
+          type: themeMode,
+          color: Color
         },
       }),
     [themeMode],

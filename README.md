@@ -1,3 +1,7 @@
+# seblaz.github.io
+
+[![Build Status](https://travis-ci.com/seblaz/seblaz.github.io.svg?branch=develop)](https://travis-ci.com/seblaz/seblaz.github.io)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
