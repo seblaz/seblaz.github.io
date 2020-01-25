@@ -1,9 +1,9 @@
 import React from 'react';
-import {Typography} from '@material-ui/core';
+import Demo from 'components/Demo';
 
 export default () => {
 
   return (
-    <Typography>Experiencia Laboral</Typography>
+    <Demo/>
   )
 }

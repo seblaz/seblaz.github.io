@@ -1,5 +1,4 @@
 import React from 'react';
-// import {makeStyles} from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import ProjectCard from 'components/ProjectCard';
 
@@ -8,9 +7,6 @@ import predictingUserConversions from 'assets/img/proyects/predicting-user-conve
 import finalFight from 'assets/img/proyects/final fight.png';
 import winAutomation from 'assets/img/proyects/winautomation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
-
-// const useStyles = makeStyles(theme => ({
-// }));
 
 const projects = [
   {
@@ -52,12 +48,15 @@ const projects = [
   }];
 
 export default () => {
-  // const classes = useStyles();
 
   return (
-    <Grid container spacing={3}>
+    <Grid
+      container
+      alignItems="flex-start"
+      spacing={3}
+    >
       {projects.map((projectData, key) =>
-        <Grid container item xs={12} md={4} key={key}>
+        <Grid container item xs={12} md={4} key={key} style={{position: 'relative'}}>
           <ProjectCard {...projectData}/>
         </Grid>)}
     </Grid>

@@ -1,36 +1,28 @@
-import React, {useState} from 'react';
-import {Typography} from '@material-ui/core';
+import React, {Fragment, useState} from 'react';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import {makeStyles} from '@material-ui/styles';
-import GithubButton from 'components/GithubButton';
+import {useSpring, animated, config} from 'react-spring'
+import ProjectCardContent from 'components/ProjectCardContent';
 
 const useStyles = makeStyles(theme => ({
-  media: {
-    height: 140,
+  placeholder: {
+    opacity: 0
   },
-  titleContainer: {
-    position: 'relative',
-    textAlign: 'center'
-  },
-  title: {
-    color: 'white',
+  animated: {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)'
+    paddingRight: 'inherit',
+    zIndex: ({cardFocused}) => cardFocused ? 100 : 0
   },
-  backgroundOverlay: {
-    background: ({backgroundOpacity}) => theme.palette.color('black').alpha(0.35 + backgroundOpacity).rgb().string(),
-    height: '100%'
+  card: {
+    transition: 'box-shadow 0.8s',
+    boxShadow: 'rgba(0, 0, 0, 0.2) 0px 1px 2px 0px',
+    '&:hover': {
+      boxShadow: 'rgba(0, 0, 0, 0.2) 0px 16px 32px 0px'
+    }
   }
 }));
 
-export default ({title, imgSource, description, backgroundOpacity, ...other}) => {
-  const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
+export default ({imgSource, ...other}) => {
   const [cardFocused, setCardFocused] = useState(false);
 
   const focusCard = () => {
@@ -41,34 +33,39 @@ export default ({title, imgSource, description, backgroundOpacity, ...other}) =>
     setCardFocused(false);
   };
 
+  const [{transform}, setTransform] = useSpring(() => ({
+    transform: 'scale(1.001)',
+    config: config.gentle
+  }));
+
+  setTransform({
+    transform: `scale(${cardFocused ? 1.2 : 1.001})`
+  });
+
+  const classes = useStyles({cardFocused: cardFocused});
+
   return (
-    <Card
-      onMouseOver={focusCard}
-      onMouseLeave={unFocusCard}
-    >
-      <CardActionArea>
-        <div className={classes.titleContainer}>
-          <CardMedia
-            className={classes.media}
-            image={imgSource}
-            title={title}
-          >
-            <div className={classes.backgroundOverlay}/>
-          </CardMedia>
-          <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-            {title}
-          </Typography>
-        </div>
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      {cardFocused &&
-      <CardActions>
-        <GithubButton {...other}/>
-      </CardActions>}
-    </Card>
+    <Fragment>
+      {/* Placeholder to occupy the place when the animation occurs. */}
+      <Card className={classes.placeholder}>
+        <ProjectCardContent {...other}/>
+      </Card>
+      {/* Real card */}
+      <animated.div
+        className={classes.animated}
+        style={{
+          transform: transform
+        }}
+      >
+        <Card
+          onMouseEnter={focusCard}
+          onMouseLeave={unFocusCard}
+          className={classes.card}
+        >
+          <ProjectCardContent
+            cardFocused={cardFocused} imgSource={imgSource} {...other}/>
+        </Card>
+      </animated.div>
+    </Fragment>
   )
 }
