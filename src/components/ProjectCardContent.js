@@ -5,6 +5,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import {makeStyles} from '@material-ui/styles';
 import ProjectCardActions from 'components/ProjectCardActions';
+import Color from 'color';
 
 const useStyles = makeStyles(theme => ({
   media: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'translate(-50%, -50%)'
   },
   backgroundOverlay: {
-    background: ({backgroundOpacity}) => theme.palette.color('black').alpha(0.35 + backgroundOpacity).rgb().string(),
+    background: ({backgroundOpacity}) => Color('black').alpha(0.35 + backgroundOpacity).rgb().string(),
     height: '100%'
   }
 }));

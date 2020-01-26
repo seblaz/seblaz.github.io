@@ -32,7 +32,7 @@ export default ({...other}) => {
           width={65}
           onColor={Color(theme.palette.primary.dark).hex()}
           offColor={Color(theme.palette.primary.light).hex()}
-          activeBoxShadow={`${theme.palette.primary.color.hex()} 0 0 4px 3px`}
+          activeBoxShadow={`${theme.palette.primary.main} 0 0 4px 3px`}
           uncheckedIcon={<WbSunny className={classes.icon}/>}
           checkedIcon={<Brightness3 className={classes.icon}/>}
           checked={themeMode === 'dark'}

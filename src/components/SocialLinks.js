@@ -1,0 +1,67 @@
+import React from 'react';
+import {makeStyles} from '@material-ui/styles';
+import Grid from '@material-ui/core/Grid';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
+
+const useStyles = makeStyles(theme => ({
+  socialContainer: {
+    [theme.breakpoints.down('xs')]: {
+      margin: theme.spacing(0, 0.5)
+    }
+  },
+  socialItem: {
+    display: 'flex',
+    alignItems: 'baseline',
+    justifyContent: 'center'
+  },
+  iconWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 60,
+    height: 60,
+    borderRadius: '100%',
+    border: `2px solid ${theme.palette.primary.lighter(90)}`,
+    color: theme.palette.primary.lighter(90),
+    transition: 'background .2s ease-in-out, color .2s ease-in-out',
+    '&:hover': {
+      color: theme.palette.primary.main,
+      background: theme.palette.primary.lighter(80),
+      border: `2px solid ${theme.palette.primary.lighter(80)}`,
+    }
+  }
+}));
+
+const mediaLinks = [
+  {
+    link: '//github.com/seblaz/',
+    icon: faGithub
+  }, {
+    link: '//www.linkedin.com/in/sebastian-blazquez/',
+    icon: faLinkedinIn
+  }, {
+    link: 'mailto:sebastian.blazquez96@gmail.com',
+    icon: faEnvelope
+  }, {
+    link: '/',
+    icon: faHome
+  }
+];
+
+export default () => {
+  const classes = useStyles();
+
+  return (
+    <Grid container spacing={2} className={classes.socialContainer}>
+      {mediaLinks.map(({link, icon}) =>
+        <Grid item xs={3} md={2} className={classes.socialItem} key={link}>
+          <a href={link} className={classes.iconWrapper}>
+            <FontAwesomeIcon icon={icon} size='2x'/>
+          </a>
+        </Grid>
+      )}
+    </Grid>
+  )
+}

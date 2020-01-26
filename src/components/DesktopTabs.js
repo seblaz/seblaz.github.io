@@ -18,12 +18,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default ({...other}) => {
+export default () => {
   const classes = useStyles();
 
   return (
-    <div {...other}>
-      <Tabs tabsProps={{className: classes.desktopTabs}} tabProps={{className: classes.tabItem}}/>
-    </div>
+    <Tabs tabsProps={{className: classes.desktopTabs}} tabProps={{className: classes.tabItem}}/>
   )
 }

@@ -32,14 +32,12 @@ export default ({children}) => {
         palette: {
           primary: {
             main: '#47CC31',
-            color: Color('#47CC31')
+            lighter: ratio => Color('#47CC31').lighten(ratio / 100).hex()
           },
           secondary: {
-            main: '#B531CC',
-            color: Color('#B531CC')
+            main: '#B531CC'
           },
-          type: themeMode,
-          color: Color
+          type: themeMode
         },
       }),
     [themeMode],

@@ -11,6 +11,9 @@ import DesktopTabs from 'components/DesktopTabs';
 import {Hidden} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+  appBar: {
+    zIndex: 0
+  },
   separator: {
     flexGrow: 1,
   },
@@ -35,7 +38,7 @@ export default function ButtonAppBar() {
 
   return (
     <Fragment>
-      <AppBar position='static'>
+      <AppBar position='static' className={classes.appBar}>
         <Container fixed className={classes.container}>
           <Logo/>
           <div className={classes.separator}/>

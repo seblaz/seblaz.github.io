@@ -5,42 +5,34 @@ import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
-  wrapper: {
-    display: 'flex'
-  },
   link: {
-    display: 'flex',
+    textAlign: 'center',
     textDecoration: 'none'
   },
-  logo: {
-    minHeight: 50,
-    width: 'auto',
-    margin: theme.spacing(1.5),
-    '--SB-primary': theme.palette.primary.color.lighten(0.9).hex(),
-    '--SB-secondary': theme.palette.primary.color.lighten(0.7).hex(),
+  logoWrapper: {
+    display: ({showName}) => showName ? 'block' : 'flex'
   },
-  nameWrapper: {
-    display: 'flex',
-    alignItems: 'center'
+  logo: {
+    width: 'auto',
+    height: ({height}) => height,
+    margin: ({showName}) => showName ? 0 : theme.spacing(1.5),
+    '--SB-primary': theme.palette.primary.lighter(90),
+    '--SB-secondary': theme.palette.primary.lighter(70)
   },
   name: {
-    color: 'white',
-    fontSize: 30,
-    fontWeight: 500
+    color: 'white'
   }
 }));
 
-export default () => {
-  const classes = useStyles();
+export default ({height = 60, showName = false}) => {
+  const classes = useStyles({showName: showName, height: height});
 
   return (
-    <div className={classes.wrapper}>
-      <Link to='/' className={classes.link}>
+    <Link to='/' className={classes.link}>
+      <div className={classes.logoWrapper}>
         <SB className={classes.logo}/>
-        <div className={classes.nameWrapper}>
-          <Typography variant='h4' className={classes.name}>Seblaz</Typography>
-        </div>
-      </Link>
-    </div>
+      </div>
+      {showName && <Typography variant='h5' className={classes.name}>Seblaz</Typography>}
+    </Link>
   )
 }
