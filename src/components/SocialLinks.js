@@ -6,12 +6,6 @@ import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
 
 const useStyles = makeStyles(theme => ({
-  socialContainer: {
-    // padding: theme.spacing(0, 0.5),
-    [theme.breakpoints.down('xs')]: {
-      margin: theme.spacing(0, 0.5)
-    }
-  },
   socialItem: {
     display: 'flex',
     alignItems: 'baseline',
@@ -55,7 +49,7 @@ export default () => {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={2} className={classes.socialContainer}>
+    <Grid container spacing={2}>
       {mediaLinks.map(({link, icon}) =>
         <Grid item xs={3} md={2} className={classes.socialItem} key={link}>
           <a href={link} className={classes.iconWrapper}>
