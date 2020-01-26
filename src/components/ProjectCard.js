@@ -64,6 +64,7 @@ export default ({imgSource, spacing, ...other}) => {
         }}
       >
         <Card
+          onMouseDown={focusCard}
           onMouseEnter={focusCard}
           onMouseLeave={unFocusCard}
           className={classes.card}
