@@ -7,6 +7,7 @@ import {faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
 
 const useStyles = makeStyles(theme => ({
   socialContainer: {
+    // padding: theme.spacing(0, 0.5),
     [theme.breakpoints.down('xs')]: {
       margin: theme.spacing(0, 0.5)
     }

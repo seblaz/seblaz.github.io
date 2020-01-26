@@ -19,6 +19,9 @@ const useStyles = makeStyles(theme => ({
   container: {
     padding: theme.spacing(2, 2)
   },
+  gridContainer: {
+    padding: theme.spacing(0.5)
+  },
   copyright: {
     display: 'flex',
     justifyContent: 'center',
@@ -32,7 +35,7 @@ export default () => {
   return (
     <AppBar position="static" className={classes.appBar} component='footer'>
       <Container fixed className={classes.container}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} className={classes.gridContainer}>
           <Grid item xs={12} sm={3}>
             <Logo showName={true} height={100}/>
           </Grid>
