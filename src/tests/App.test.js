@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import App from 'app';
 
 test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/Seblaz/i);
+  const { getAllByText } = render(<App />);
+  const linkElement = getAllByText(/Seblaz/i)[0];
   expect(linkElement).toBeInTheDocument();
 });
