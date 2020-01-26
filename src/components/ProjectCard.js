@@ -1,8 +1,9 @@
 import React, {Fragment, useState} from 'react';
 import Card from '@material-ui/core/Card';
-import {makeStyles} from '@material-ui/styles';
+import {makeStyles, useTheme} from '@material-ui/styles';
 import {useSpring, animated, config} from 'react-spring'
 import ProjectCardContent from 'components/ProjectCardContent';
+import {useMediaQuery} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   placeholder: {
@@ -10,8 +11,7 @@ const useStyles = makeStyles(theme => ({
   },
   animated: {
     position: 'absolute',
-    paddingRight: 'inherit',
-    zIndex: ({cardFocused}) => cardFocused ? 100 : 0
+    marginRight: ({spacing}) => theme.spacing(spacing / 2)
   },
   card: {
     transition: 'box-shadow 0.8s',
@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default ({imgSource, ...other}) => {
+export default ({imgSource, spacing, ...other}) => {
   const [cardFocused, setCardFocused] = useState(false);
 
   const focusCard = () => {
@@ -33,16 +33,21 @@ export default ({imgSource, ...other}) => {
     setCardFocused(false);
   };
 
-  const [{transform}, setTransform] = useSpring(() => ({
+  const [{transform, zIndex}, setAnimations] = useSpring(() => ({
     transform: 'scale(1.001)',
+    zIndex: 0,
     config: config.gentle
   }));
 
-  setTransform({
-    transform: `scale(${cardFocused ? 1.2 : 1.001})`
+  const theme = useTheme();
+  const xs = useMediaQuery(theme.breakpoints.down('xs'));
+
+  setAnimations({
+    transform: `scale(${cardFocused ? xs ? 1.05 : 1.2 : 1.001})`,
+    zIndex: cardFocused ? 100 : 0
   });
 
-  const classes = useStyles({cardFocused: cardFocused});
+  const classes = useStyles({spacing: spacing});
 
   return (
     <Fragment>
@@ -54,7 +59,8 @@ export default ({imgSource, ...other}) => {
       <animated.div
         className={classes.animated}
         style={{
-          transform: transform
+          transform: transform,
+          zIndex: zIndex.interpolate(zIndex => Math.round(zIndex))
         }}
       >
         <Card
@@ -62,8 +68,7 @@ export default ({imgSource, ...other}) => {
           onMouseLeave={unFocusCard}
           className={classes.card}
         >
-          <ProjectCardContent
-            cardFocused={cardFocused} imgSource={imgSource} {...other}/>
+          <ProjectCardContent cardFocused={cardFocused} imgSource={imgSource} {...other}/>
         </Card>
       </animated.div>
     </Fragment>

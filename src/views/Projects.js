@@ -48,16 +48,17 @@ const projects = [
   }];
 
 export default () => {
+  const spacing = 3;
 
   return (
     <Grid
       container
       alignItems="flex-start"
-      spacing={3}
+      spacing={spacing}
     >
       {projects.map((projectData, key) =>
-        <Grid container item xs={12} md={4} key={key} style={{position: 'relative'}}>
-          <ProjectCard {...projectData}/>
+        <Grid container item xs={12} md={4} sm={6} key={key} style={{position: 'relative'}}>
+          <ProjectCard {...projectData} spacing={spacing}/>
         </Grid>)}
     </Grid>
   )

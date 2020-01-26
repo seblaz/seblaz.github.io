@@ -3,9 +3,8 @@ import {Typography} from '@material-ui/core';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import {makeStyles} from '@material-ui/styles';
-import GithubButton from 'components/GithubButton';
+import ProjectCardActions from 'components/ProjectCardActions';
 
 const useStyles = makeStyles(theme => ({
   media: {
@@ -28,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default ({title, imgSource, description, backgroundOpacity, cardFocused, ...other}) => {
+export default ({title, imgSource, description, backgroundOpacity, cardFocused, ...gitHubProps}) => {
   const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
 
   return (
@@ -52,10 +51,7 @@ export default ({title, imgSource, description, backgroundOpacity, cardFocused, 
           </Typography>
         </CardContent>
       </CardActionArea>
-      {cardFocused &&
-      <CardActions>
-        <GithubButton {...other}/>
-      </CardActions>}
+      <ProjectCardActions show={cardFocused} {...gitHubProps}/>
     </Fragment>
   )
 }
