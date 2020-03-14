@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1260b615d16648d489cd5f905c2e331c",
+    "revision": "da3adc2d402b754e5b819286a2c952a7",
     "url": "/index.html"
   },
   {
-    "revision": "4c2835ae8c2cbab8ce09",
+    "revision": "72f560240d16c683b3c0",
     "url": "/static/css/2.8271af8e.chunk.css"
   },
   {
-    "revision": "92c7e5fac97c6a241bb5",
+    "revision": "fa7c931d9d04e6fd9412",
     "url": "/static/css/main.06735d8c.chunk.css"
   },
   {
-    "revision": "4c2835ae8c2cbab8ce09",
-    "url": "/static/js/2.e90d239e.chunk.js"
+    "revision": "72f560240d16c683b3c0",
+    "url": "/static/js/2.4205f750.chunk.js"
   },
   {
     "revision": "5396de0513fe8132c046e37d8d61f727",
-    "url": "/static/js/2.e90d239e.chunk.js.LICENSE"
+    "url": "/static/js/2.4205f750.chunk.js.LICENSE"
   },
   {
-    "revision": "92c7e5fac97c6a241bb5",
-    "url": "/static/js/main.cbdd8588.chunk.js"
+    "revision": "fa7c931d9d04e6fd9412",
+    "url": "/static/js/main.55828cdd.chunk.js"
   },
   {
     "revision": "f5a8fc87174c6ae0b1f7",
@@ -40,12 +40,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/final fight.612f91a8.png"
   },
   {
+    "revision": "0e0849447e7d931990de082cf2710674",
+    "url": "/static/media/fiuba.0e084944.png"
+  },
+  {
     "revision": "62d6bccb57da8ba03ebc9fc7538fb462",
     "url": "/static/media/github icon.62d6bccb.svg"
   },
   {
+    "revision": "adbe3731afb470569a6c544fcebe6d41",
+    "url": "/static/media/ibm.adbe3731.webp"
+  },
+  {
     "revision": "f3aacf1ba7823cb01c23259bd9c99a04",
     "url": "/static/media/matrix.f3aacf1b.jpg"
+  },
+  {
+    "revision": "8f407bc0c341a0b5deab1e66e83b9935",
+    "url": "/static/media/ministerio.8f407bc0.jpg"
   },
   {
     "revision": "fdb10b2f50a08fe81067edbf5bf64dad",
@@ -146,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ebf6d1640ccddb99fb49f73c052c55a8",
     "url": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  {
+    "revision": "ff28f22aed10b901a761cc323ac06f1a",
+    "url": "/static/media/senderos.ff28f22a.jpg"
   },
   {
     "revision": "ce213866641d3bbe19f66d7289589937",
