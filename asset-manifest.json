@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.06735d8c.chunk.css",
-    "main.js": "/static/js/main.55828cdd.chunk.js",
-    "main.js.map": "/static/js/main.55828cdd.chunk.js.map",
+    "main.js": "/static/js/main.798394fe.chunk.js",
+    "main.js.map": "/static/js/main.798394fe.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.327900a2.js",
     "runtime-main.js.map": "/static/js/runtime-main.327900a2.js.map",
     "static/css/2.8271af8e.chunk.css": "/static/css/2.8271af8e.chunk.css",
-    "static/js/2.4205f750.chunk.js": "/static/js/2.4205f750.chunk.js",
-    "static/js/2.4205f750.chunk.js.map": "/static/js/2.4205f750.chunk.js.map",
+    "static/js/2.851a2c81.chunk.js": "/static/js/2.851a2c81.chunk.js",
+    "static/js/2.851a2c81.chunk.js.map": "/static/js/2.851a2c81.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.27c87cd6e8824209f58e8c92e3f173f5.js": "/precache-manifest.27c87cd6e8824209f58e8c92e3f173f5.js",
+    "precache-manifest.4a9e2caff5f6728ac2cc79730f956312.js": "/precache-manifest.4a9e2caff5f6728ac2cc79730f956312.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8271af8e.chunk.css.map": "/static/css/2.8271af8e.chunk.css.map",
     "static/css/main.06735d8c.chunk.css.map": "/static/css/main.06735d8c.chunk.css.map",
-    "static/js/2.4205f750.chunk.js.LICENSE": "/static/js/2.4205f750.chunk.js.LICENSE",
+    "static/js/2.851a2c81.chunk.js.LICENSE": "/static/js/2.851a2c81.chunk.js.LICENSE",
     "static/media/SB.7277acbd.svg": "/static/media/SB.7277acbd.svg",
+    "static/media/background.jpg": "/static/media/background.bee36bb7.jpg",
     "static/media/cuadernos ya.jpg": "/static/media/cuadernos ya.f260072a.jpg",
     "static/media/final fight.png": "/static/media/final fight.612f91a8.png",
     "static/media/fiuba.png": "/static/media/fiuba.0e084944.png",
@@ -22,6 +23,7 @@
     "static/media/ibm.webp": "/static/media/ibm.adbe3731.webp",
     "static/media/matrix.jpg": "/static/media/matrix.f3aacf1b.jpg",
     "static/media/ministerio.jpg": "/static/media/ministerio.8f407bc0.jpg",
+    "static/media/perfil.png": "/static/media/perfil.83530dd1.png",
     "static/media/predicting-user-conversions.jpg": "/static/media/predicting-user-conversions.fdb10b2f.jpg",
     "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2",
     "static/media/senderos.jpg": "/static/media/senderos.ff28f22a.jpg",
@@ -30,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.327900a2.js",
     "static/css/2.8271af8e.chunk.css",
-    "static/js/2.4205f750.chunk.js",
+    "static/js/2.851a2c81.chunk.js",
     "static/css/main.06735d8c.chunk.css",
-    "static/js/main.55828cdd.chunk.js"
+    "static/js/main.798394fe.chunk.js"
   ]
 }

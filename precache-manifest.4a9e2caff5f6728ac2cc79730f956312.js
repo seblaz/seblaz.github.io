@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da3adc2d402b754e5b819286a2c952a7",
+    "revision": "0e751f2f91584d83accfeb7fc7ca2f97",
     "url": "/index.html"
   },
   {
-    "revision": "72f560240d16c683b3c0",
+    "revision": "d9b112522f5f946616e1",
     "url": "/static/css/2.8271af8e.chunk.css"
   },
   {
-    "revision": "fa7c931d9d04e6fd9412",
+    "revision": "87f151afad7b6b4bdc2a",
     "url": "/static/css/main.06735d8c.chunk.css"
   },
   {
-    "revision": "72f560240d16c683b3c0",
-    "url": "/static/js/2.4205f750.chunk.js"
+    "revision": "d9b112522f5f946616e1",
+    "url": "/static/js/2.851a2c81.chunk.js"
   },
   {
     "revision": "5396de0513fe8132c046e37d8d61f727",
-    "url": "/static/js/2.4205f750.chunk.js.LICENSE"
+    "url": "/static/js/2.851a2c81.chunk.js.LICENSE"
   },
   {
-    "revision": "fa7c931d9d04e6fd9412",
-    "url": "/static/js/main.55828cdd.chunk.js"
+    "revision": "87f151afad7b6b4bdc2a",
+    "url": "/static/js/main.798394fe.chunk.js"
   },
   {
     "revision": "f5a8fc87174c6ae0b1f7",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7277acbdbe2006c8d21ed08f54fff390",
     "url": "/static/media/SB.7277acbd.svg"
+  },
+  {
+    "revision": "bee36bb775304128ae2e20fcb30e4772",
+    "url": "/static/media/background.bee36bb7.jpg"
   },
   {
     "revision": "f260072a5d8a326e38ff91586e754041",
@@ -58,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f407bc0c341a0b5deab1e66e83b9935",
     "url": "/static/media/ministerio.8f407bc0.jpg"
+  },
+  {
+    "revision": "83530dd17f6ac1f229dc858a780a5dda",
+    "url": "/static/media/perfil.83530dd1.png"
   },
   {
     "revision": "fdb10b2f50a08fe81067edbf5bf64dad",
