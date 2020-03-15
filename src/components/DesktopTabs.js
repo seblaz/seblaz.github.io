@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   desktopTabs: {
     alignItems: 'flex-end',
     position: 'absolute',
-    left: '50%',
+    left: '51%',
     transform: 'translateX(-50%)',
     height: '100%'
   }

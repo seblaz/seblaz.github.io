@@ -12,7 +12,7 @@ import {Hidden} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
-    zIndex: 0
+    zIndex: 100
   },
   separator: {
     flexGrow: 1,

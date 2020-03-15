@@ -10,6 +10,7 @@ import ibm from "assets/img/ibm.webp";
 import ministerio from "assets/img/ministerio.jpg";
 import american from "assets/img/american.png";
 import {useTheme} from "@material-ui/styles";
+import ContentWrapper from "./ContentWrapper";
 
 
 const workExperience = [
@@ -44,8 +45,8 @@ const workExperience = [
         to: new Date("2020 02"),
         description:
             "Desarrollador en RPA (Automatización Robótica de Procesos) utilizando " +
-            "WinAutomation y Automation Anywhere. En este trabajo también desar- " +
-            "rollé una API REST utilizando Python y el respectivo FrontEnd utilizando " +
+            "WinAutomation y Automation Anywhere. En este trabajo también desarrollé " +
+            "una API REST utilizando Python y el respectivo FrontEnd utilizando " +
             "React.Js. Asimismo en dicha aplicación incorporé optimizaciones empleando " +
             "Nginx, consultas SQL y delívery continuo.",
         logo: ibm
@@ -90,14 +91,16 @@ export default () => {
     const matchesXs = useMediaQuery(theme.breakpoints.only('xs'));
 
     return (
-        <Container maxWidth="md" disableGutters={matchesXs}>
-            <Grid container spacing={2}>
-                {workExperience.map((workExp, index) =>
-                    <Grid item key={index} xs={12}>
-                        <WorkExperience {...workExp}/>
-                    </Grid>
-                )}
-            </Grid>
-        </Container>
+        <ContentWrapper>
+            <Container maxWidth="md" disableGutters={matchesXs}>
+                <Grid container spacing={2}>
+                    {workExperience.map((workExp, index) =>
+                        <Grid item key={index} xs={12}>
+                            <WorkExperience {...workExp}/>
+                        </Grid>
+                    )}
+                </Grid>
+            </Container>
+        </ContentWrapper>
     )
 }

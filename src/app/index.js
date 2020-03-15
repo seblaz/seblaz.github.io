@@ -4,16 +4,20 @@ import Router from 'app/Router';
 import Header from 'sections/Header';
 import Footer from 'sections/Footer';
 import Content from 'sections/Content';
+
 import 'assets/css/app.css'
+import ScrollToTop from "../components/ScrollToTop";
+
 
 export default () => {
-  return (
-    <Theme>
-      <Router>
-        <Header/>
-        <Content/>
-        <Footer/>
-      </Router>
-    </Theme>
-  )
+    return (
+        <Theme>
+            <Router>
+                <ScrollToTop/>
+                <Header/>
+                <Content/>
+                <Footer/>
+            </Router>
+        </Theme>
+    )
 }

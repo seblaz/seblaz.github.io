@@ -1,22 +1,36 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import {makeStyles} from '@material-ui/core';
-import Routes from 'sections/Routes';
+import {Switch, Route} from 'react-router-dom';
+import Home from 'views/Home';
+import Projects from 'views/Projects';
+import WorkExperience from 'views/WorkExperience';
+import NotFound from 'views/NotFound';
 
-const useStyles = makeStyles(theme => ({
-  wrapper: {
-    margin: theme.spacing(2, 0)
-  }
-}));
+const content = [{
+    label: 'Proyectos',
+    route: '/proyectos',
+    Component: Projects
+}, {
+    label: 'Experiencia laboral',
+    route: '/experiencia_laboral',
+    Component: WorkExperience
+}];
 
 export default () => {
-  const classes = useStyles();
-
-  return (
-    <Container fixed>
-      <div className={classes.wrapper}>
-        <Routes/>
-      </div>
-    </Container>
-  )
+    return (
+        <Switch>
+            <Route exact path='/'>
+                <Home/>
+            </Route>
+            {content.map(({label, route, Component}, key) =>
+                <Route path={route} key={key}>
+                    <Component/>
+                </Route>
+            )}
+            <Route>
+                <NotFound/>
+            </Route>
+        </Switch>
+    )
 }
+
+export {content};

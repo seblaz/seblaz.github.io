@@ -44,7 +44,7 @@ export default ({imgSource, spacing, ...other}) => {
 
   setAnimations({
     transform: `scale(${cardFocused ? xs ? 1.05 : 1.2 : 1.001})`,
-    zIndex: cardFocused ? 100 : 0
+    zIndex: cardFocused ? 200 : 100
   });
 
   const classes = useStyles({spacing: spacing});
