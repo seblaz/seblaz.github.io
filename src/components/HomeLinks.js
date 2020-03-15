@@ -70,10 +70,10 @@ export default () => {
                         color="primary"
                         size="medium"
                         component={Link}
-                        to="/experiencia_laboral"
+                        to="/proyectos"
                         className={classes.smallButtons}
                     >
-                        Ver Experiencia laboral
+                        Ver proyectos
                     </Button>
                 </Grid>
                 <Grid item xs={12} className={classes.centered}>
@@ -82,10 +82,10 @@ export default () => {
                         color="primary"
                         size="medium"
                         component={Link}
-                        to="/proyectos"
+                        to="/experiencia_laboral"
                         className={classes.smallButtons}
                     >
-                        Ver proyectos
+                        Ver Experiencia laboral
                     </Button>
                 </Grid>
             </Hidden>

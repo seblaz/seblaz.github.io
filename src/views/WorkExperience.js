@@ -3,14 +3,17 @@ import WorkExperience from "components/WorkExperience";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import {makeStyles, useTheme} from "@material-ui/styles";
+import ContentWrapper from "./ContentWrapper";
+import ContentTitle from "../components/ContentTitle";
+import Button from "@material-ui/core/Button";
 
 import senderos from "assets/img/senderos.jpg";
 import fiuba from "assets/img/fiuba.png";
 import ibm from "assets/img/ibm.webp";
 import ministerio from "assets/img/ministerio.jpg";
 import american from "assets/img/american.png";
-import {useTheme} from "@material-ui/styles";
-import ContentWrapper from "./ContentWrapper";
+import curriulum from "assets/Curriculum_Vitae.pdf";
 
 
 const workExperience = [
@@ -86,19 +89,44 @@ const workExperience = [
     }
 ];
 
+const useStyles = makeStyles(theme => ({
+    downloadButtonWrapper: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    downloadButton: {
+        color: 'white',
+        margin: theme.spacing(2, 0)
+    }
+}));
+
 export default () => {
     const theme = useTheme();
     const matchesXs = useMediaQuery(theme.breakpoints.only('xs'));
+    const classes = useStyles();
 
     return (
         <ContentWrapper>
             <Container maxWidth="md" disableGutters={matchesXs}>
+                <ContentTitle title="Experiencia laboral"/>
                 <Grid container spacing={2}>
                     {workExperience.map((workExp, index) =>
                         <Grid item key={index} xs={12}>
                             <WorkExperience {...workExp}/>
                         </Grid>
                     )}
+                    <Grid item xs={12} className={classes.downloadButtonWrapper}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            href={curriulum}
+                            download="Curriculum Sebastián Blázquez.pdf"
+                            size="large"
+                            className={classes.downloadButton}
+                        >
+                            Descargar curriculum
+                        </Button>
+                    </Grid>
                 </Grid>
             </Container>
         </ContentWrapper>

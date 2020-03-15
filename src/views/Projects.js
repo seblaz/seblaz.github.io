@@ -8,6 +8,8 @@ import finalFight from 'assets/img/proyects/final fight.png';
 import winAutomation from 'assets/img/proyects/winautomation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
 import ContentWrapper from "./ContentWrapper";
+import ContentTitle from "../components/ContentTitle";
+import Container from "@material-ui/core/Container";
 
 const projects = [
     {
@@ -53,6 +55,7 @@ export default () => {
 
     return (
         <ContentWrapper>
+            <ContentTitle title="Proyectos"/>
             <Grid
                 container
                 alignItems="flex-start"
