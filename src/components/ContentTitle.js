@@ -1,5 +1,5 @@
 import React from 'react';
-import {makeStyles, useTheme} from "@material-ui/styles";
+import {makeStyles} from "@material-ui/styles";
 import {Hidden} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 
