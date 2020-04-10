@@ -4,11 +4,11 @@ import CardHeader from "@material-ui/core/CardHeader";
 import {makeStyles} from "@material-ui/styles";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Collapse from "@material-ui/core/Collapse";
-import WorkExperienceTitle from "./WorkExperienceTitle";
-import WorkExperienceSubtitle from "./WorkExperienceSubtitle";
-import ExpandMoreIconWithTransition from "./ExpandMoreIconWithTransition";
-import WorkExperienceLogo from "./WorkExperienceLogo";
-import WorkExperienceContent from "./WorkExperienceContent";
+import WorkExperienceTitle from "components/work-experience/WorkExperienceTitle";
+import WorkExperienceSubtitle from "components/work-experience/WorkExperienceSubtitle";
+import ExpandMoreIconWithTransition from "components/work-experience/ExpandMoreIconWithTransition";
+import WorkExperienceLogo from "components/work-experience/WorkExperienceLogo";
+import WorkExperienceContent from "components/work-experience/WorkExperienceContent";
 
 
 const useStyles = makeStyles(theme => ({

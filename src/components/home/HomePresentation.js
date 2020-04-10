@@ -2,7 +2,7 @@ import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import background from 'assets/img/background.jpg';
 import {Parallax} from 'react-parallax';
-import HomePresentationContent from "./HomePresentationContent";
+import HomePresentationContent from "components/home/HomePresentationContent";
 
 
 const useStyles = makeStyles(theme => ({

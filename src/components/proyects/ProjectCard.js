@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react';
 import Card from '@material-ui/core/Card';
 import {makeStyles, useTheme} from '@material-ui/styles';
 import {useSpring, animated, config} from 'react-spring'
-import ProjectCardContent from 'components/ProjectCardContent';
+import ProjectCardContent from 'components/proyects/ProjectCardContent';
 import {useMediaQuery} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({

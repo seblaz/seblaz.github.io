@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Logo from 'components/Logo';
 import Typography from '@material-ui/core/Typography';
-import SocialLinks from 'components/SocialLinks';
+import SocialLinks from 'components/footer/SocialLinks';
 
 const useStyles = makeStyles(theme => ({
   appBar: {

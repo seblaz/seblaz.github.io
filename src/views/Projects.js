@@ -1,13 +1,13 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import ProjectCard from 'components/ProjectCard';
+import ProjectCard from 'components/proyects/ProjectCard';
 
-import matrix from 'assets/img/proyects/snake/matrix.jpg';
+import matrix from 'assets/img/proyects/snake.jpg';
 import predictingUserConversions from 'assets/img/proyects/predicting-user-conversions.jpg';
 import finalFight from 'assets/img/proyects/final fight.png';
-import winAutomation from 'assets/img/proyects/winautomation.svg';
+import winAutomation from 'assets/img/proyects/automation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "components/ContentWrapper";
 import ContentTitle from "../components/ContentTitle";
 
 

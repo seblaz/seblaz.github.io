@@ -1,10 +1,10 @@
 import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
-import HomePresentation from "../components/HomePresentation";
-import ContentWrapper from "./ContentWrapper";
+import HomePresentation from "components/home/HomePresentation";
+import ContentWrapper from "components/ContentWrapper";
 import Paper from "@material-ui/core/Paper";
-import AboutMe from "../components/AboutMe";
-import HomeLinks from "../components/HomeLinks";
+import AboutMe from "components/home/AboutMe";
+import HomeLinks from "components/home/HomeLinks";
 
 
 const useStyles = makeStyles(theme => ({

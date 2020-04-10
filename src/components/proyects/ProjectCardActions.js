@@ -1,6 +1,6 @@
 import React from 'react';
 import CardActions from '@material-ui/core/CardActions';
-import GithubButton from 'components/GithubButton';
+import GithubButton from 'components/proyects/GithubButton';
 import {useSpring, animated} from 'react-spring';
 
 export default ({show, ...gitHubProps}) => {

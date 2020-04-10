@@ -6,7 +6,7 @@ import Footer from 'sections/Footer';
 import Content from 'sections/Content';
 
 import 'assets/css/app.css'
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTop from "app/ScrollToTop";
 
 
 export default () => {

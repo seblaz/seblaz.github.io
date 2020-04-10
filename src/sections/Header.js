@@ -5,9 +5,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Container from '@material-ui/core/Container';
 import Logo from 'components/Logo';
-import ThemeModeToggle from 'components/ThemeModeToggle';
-import Drawer from 'components/Drawer';
-import DesktopTabs from 'components/DesktopTabs';
+import ThemeModeToggle from 'components/header/ThemeModeToggle';
+import Drawer from 'components/header/Drawer';
+import DesktopTabs from 'components/header/DesktopTabs';
 import {Hidden} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({

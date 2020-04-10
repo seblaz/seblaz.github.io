@@ -1,18 +1,18 @@
 import React from 'react';
-import WorkExperienceDownloadButton from "components/WorkExperienceDownloadButton";
-import WorkExperience from "components/WorkExperience";
+import WorkExperienceDownloadButton from "components/work-experience/WorkExperienceDownloadButton";
+import WorkExperience from "components/work-experience/WorkExperience";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from "@material-ui/styles";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "components/ContentWrapper";
 import ContentTitle from "../components/ContentTitle";
 
-import senderos from "assets/img/senderos.jpg";
-import fiuba from "assets/img/fiuba.png";
-import ibm from "assets/img/ibm.webp";
-import ministerio from "assets/img/ministerio.jpg";
-import american from "assets/img/american.png";
+import senderos from "assets/img/work-experience/senderos.jpg";
+import fiuba from "assets/img/work-experience/fiuba.png";
+import ibm from "assets/img/work-experience/ibm.webp";
+import ministerio from "assets/img/work-experience/ministerio.jpg";
+import american from "assets/img/work-experience/american.png";
 
 
 const workExperience = [

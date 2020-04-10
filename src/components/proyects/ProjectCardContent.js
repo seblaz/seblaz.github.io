@@ -4,7 +4,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import {makeStyles} from '@material-ui/styles';
-import ProjectCardActions from 'components/ProjectCardActions';
+import ProjectCardActions from 'components/proyects/ProjectCardActions';
 import Color from 'color';
 
 const useStyles = makeStyles(theme => ({
