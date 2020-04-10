@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
             marginBottom: theme.spacing(0),
         },
         [theme.breakpoints.only('sm')]: {
-            marginTop: theme.spacing(4),
+            marginTop: theme.spacing(4.5),
         },
         [theme.breakpoints.only('xs')]: {
             marginTop: theme.spacing(2),
@@ -39,7 +39,7 @@ export default () => {
                 <Grid item md={6} className={classes.centered}>
                     <Button
                         variant="outlined"
-                        color="primary"
+                        color="secondary"
                         size="large"
                         component={Link}
                         to="/experiencia_laboral"
@@ -53,7 +53,7 @@ export default () => {
                 <Grid item md={5} className={classes.centered}>
                     <Button
                         variant="outlined"
-                        color="primary"
+                        color="secondary"
                         size="large"
                         component={Link}
                         to="/proyectos"
@@ -67,7 +67,7 @@ export default () => {
                 <Grid item xs={12} className={classes.centered}>
                     <Button
                         variant="outlined"
-                        color="primary"
+                        color="secondary"
                         size="medium"
                         component={Link}
                         to="/proyectos"
@@ -79,7 +79,7 @@ export default () => {
                 <Grid item xs={12} className={classes.centered}>
                     <Button
                         variant="outlined"
-                        color="primary"
+                        color="secondary"
                         size="medium"
                         component={Link}
                         to="/experiencia_laboral"

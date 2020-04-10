@@ -34,9 +34,12 @@ const useStyles = makeStyles(theme => ({
             marginBottom: theme.spacing(1)
         }
     },
-    divider: {
+    dividerWrapper: {
         display: 'flex',
         justifyContent: 'center'
+    },
+    dividerRoot: {
+        backgroundColor: theme.palette.secondary.lighter(50)
     }
 }));
 
@@ -72,8 +75,8 @@ export default () => {
             </Grid>
             {/* Vertical divider */}
             <Hidden mdDown>
-                <Grid item sm={1} className={classes.divider}>
-                    <Divider orientation="vertical"/>
+                <Grid item sm={1} className={classes.dividerWrapper}>
+                    <Divider orientation="vertical" classes={{root: classes.dividerRoot}}/>
                 </Grid>
             </Hidden>
             {/* Photo */}

@@ -35,7 +35,8 @@ export default ({children}) => {
             lighter: ratio => Color('#47CC31').lighten(ratio / 100).hex()
           },
           secondary: {
-            main: '#B531CC'
+            main: '#B531CC',
+            lighter: ratio => Color('#B531CC').lighten(ratio / 100).hex()
           },
           type: themeMode
         },
