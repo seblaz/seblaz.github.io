@@ -33,6 +33,10 @@ export default ({imgSource, spacing, ...other}) => {
     setCardFocused(false);
   };
 
+  const toggleCardFocus = () => {
+    setCardFocused(!cardFocused);
+  };
+
   const [{transform, zIndex}, setAnimations] = useSpring(() => ({
     transform: 'scale(1.001)',
     zIndex: 0,
@@ -64,12 +68,16 @@ export default ({imgSource, spacing, ...other}) => {
         }}
       >
         <Card
-          onMouseDown={focusCard}
           onMouseEnter={focusCard}
           onMouseLeave={unFocusCard}
           className={classes.card}
         >
-          <ProjectCardContent cardFocused={cardFocused} imgSource={imgSource} {...other}/>
+          <ProjectCardContent
+              onTouchStart={toggleCardFocus}
+              cardFocused={cardFocused}
+              imgSource={imgSource}
+              {...other}
+          />
         </Card>
       </animated.div>
     </Fragment>
