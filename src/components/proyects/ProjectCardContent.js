@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     focusHighlight: {}
 }));
 
-export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouchStart, ...gitHubProps}) => {
+export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouch, ...gitHubProps}) => {
     const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
 
     return (
@@ -42,7 +42,7 @@ export default ({title, imgSource, description, backgroundOpacity, cardFocused, 
             <CardActionArea classes={{
                 root: classes.actionArea,
                 focusHighlight: classes.focusHighlight
-            }} onTouchStart={onTouchStart}
+            }} onTouchEnd={onTouch}
             >
                 <div className={classes.titleContainer}>
                     <CardMedia

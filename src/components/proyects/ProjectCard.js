@@ -73,7 +73,7 @@ export default ({imgSource, spacing, ...other}) => {
           className={classes.card}
         >
           <ProjectCardContent
-              onTouchStart={toggleCardFocus}
+              onTouch={toggleCardFocus}
               cardFocused={cardFocused}
               imgSource={imgSource}
               {...other}
