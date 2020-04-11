@@ -53,7 +53,13 @@ export default ({namespace, repo, anchor}) => {
 
     return (
         <div className={classes.gitHubButton}>
-            <a className={classes.gitHubLink} href={getRepoUrl()} target="_blank" rel="noopener noreferrer">
+            <a
+                href={getRepoUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.gitHubLink}
+                onTouchEnd={(e) => e.stopPropagation()}
+            >
                 <GitHubIcon className={classes.gitHubIcon}/>
                 <span className={classes.githubText}>Ver en Github</span>
             </a>

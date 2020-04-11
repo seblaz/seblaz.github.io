@@ -8,6 +8,7 @@ import ProjectCardActions from 'components/proyects/ProjectCardActions';
 import Color from 'color';
 import ExpandMoreIconWithTransition from "components/common/ExpandMoreIconWithTransition";
 
+
 const useStyles = makeStyles(theme => ({
     media: {
         height: 140,
@@ -27,11 +28,6 @@ const useStyles = makeStyles(theme => ({
         background: ({backgroundOpacity}) => Color('black').alpha(0.35 + backgroundOpacity).rgb().string(),
         height: '100%'
     },
-    actionArea: {
-        "&:hover $focusHighlight": {
-            opacity: 0
-        }
-    },
     cardContent: {
         display: 'flex'
     },
@@ -42,15 +38,12 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouch, ...other}) => {
+export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouchEnd, ...other}) => {
     const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
 
     return (
         <Fragment>
-            <CardActionArea classes={{
-                root: classes.actionArea,
-            }} onTouchEnd={onTouch}
-            >
+            <CardActionArea>
                 <div className={classes.titleContainer}>
                     <CardMedia
                         className={classes.media}
@@ -70,7 +63,7 @@ export default ({title, imgSource, description, backgroundOpacity, cardFocused, 
                     </Typography>
                     <div className={classes.expandMore}>
                         <ExpandMoreIconWithTransition
-                            onTouchEnd={onTouch}
+                            onTouchEnd={onTouchEnd}
                             expanded={cardFocused}
                         />
                     </div>
