@@ -2,7 +2,7 @@ import React from 'react';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import {makeStyles} from '@material-ui/styles';
 import ModeToggle from 'components/header/ThemeModeToggle';
-import Logo from 'components/Logo';
+import Logo from 'components/common/Logo';
 import MobileTabs from 'components/header/MobileTabs';
 
 const useStyles = makeStyles(theme => ({

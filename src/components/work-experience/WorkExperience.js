@@ -6,7 +6,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import Collapse from "@material-ui/core/Collapse";
 import WorkExperienceTitle from "components/work-experience/WorkExperienceTitle";
 import WorkExperienceSubtitle from "components/work-experience/WorkExperienceSubtitle";
-import ExpandMoreIconWithTransition from "components/work-experience/ExpandMoreIconWithTransition";
+import ExpandMoreIconWithTransition from "components/common/ExpandMoreIconWithTransition";
 import WorkExperienceLogo from "components/work-experience/WorkExperienceLogo";
 import WorkExperienceContent from "components/work-experience/WorkExperienceContent";
 

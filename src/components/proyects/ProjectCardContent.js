@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import {makeStyles} from '@material-ui/styles';
 import ProjectCardActions from 'components/proyects/ProjectCardActions';
 import Color from 'color';
+import ExpandMoreIconWithTransition from "components/common/ExpandMoreIconWithTransition";
 
 const useStyles = makeStyles(theme => ({
     media: {
@@ -31,17 +32,23 @@ const useStyles = makeStyles(theme => ({
             opacity: 0
         }
     },
-    focusHighlight: {}
+    cardContent: {
+        display: 'flex'
+    },
+    expandMore: {
+        position: 'absolute',
+        right: 0,
+        bottom: 0
+    }
 }));
 
-export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouch, ...gitHubProps}) => {
+export default ({title, imgSource, description, backgroundOpacity, cardFocused, onTouch, ...other}) => {
     const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
 
     return (
         <Fragment>
             <CardActionArea classes={{
                 root: classes.actionArea,
-                focusHighlight: classes.focusHighlight
             }} onTouchEnd={onTouch}
             >
                 <div className={classes.titleContainer}>
@@ -56,13 +63,20 @@ export default ({title, imgSource, description, backgroundOpacity, cardFocused, 
                         {title}
                     </Typography>
                 </div>
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography variant="body2" color="textSecondary" component="p">
                         {description}
+                        <span>{'\xa0'.repeat(10)}</span>{/* Pequeño hack para no superponer el ícono y el texto. \xa0 = non breaking space. */}
                     </Typography>
+                    <div className={classes.expandMore}>
+                        <ExpandMoreIconWithTransition
+                            onTouchEnd={onTouch}
+                            expanded={cardFocused}
+                        />
+                    </div>
                 </CardContent>
             </CardActionArea>
-            <ProjectCardActions show={cardFocused} {...gitHubProps}/>
+            <ProjectCardActions show={cardFocused} {...other}/>
         </Fragment>
     )
 }

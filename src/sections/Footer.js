@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import {makeStyles} from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Logo from 'components/Logo';
+import Logo from 'components/common/Logo';
 import Typography from '@material-ui/core/Typography';
 import SocialLinks from 'components/footer/SocialLinks';
 

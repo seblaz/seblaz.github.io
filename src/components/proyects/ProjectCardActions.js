@@ -1,24 +1,46 @@
 import React from 'react';
 import CardActions from '@material-ui/core/CardActions';
 import GithubButton from 'components/proyects/GithubButton';
+import LinkedInButton from "components/proyects/LinkedInButton";
 import {useSpring, animated} from 'react-spring';
+import {makeStyles, useTheme} from "@material-ui/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-export default ({show, ...gitHubProps}) => {
-  const maxHeight = 46;
 
-  const [{height}, setHeight] = useSpring(() => ({
-    height: 0
-  }));
+const useStyles = makeStyles(theme => ({
+    linksWrapper: {
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        [theme.breakpoints.down('md')]: {
+            display: 'block',
+        }
+    }
+}));
 
-  setHeight({
-    height: show ? maxHeight : 0
-  });
+export default ({show, linkedInUrl, ...other}) => {
+    const classes = useStyles();
+    const theme = useTheme();
+    const matchesMdDown = useMediaQuery(theme.breakpoints.down('md'));
 
-  return (
-    <animated.div style={{display: 'block', height: height}}>
-      <CardActions>
-        <GithubButton {...gitHubProps}/>
-      </CardActions>
-    </animated.div>
-  )
+    const maxHeight = linkedInUrl && matchesMdDown ? 90 : 46;
+
+    const [{height}, setHeight] = useSpring(() => ({
+        height: 0
+    }));
+
+    setHeight({
+        height: show ? maxHeight : 0
+    });
+
+    return (
+        <animated.div style={{display: 'block', height: height}}>
+            <CardActions>
+                <div className={classes.linksWrapper}>
+                    <GithubButton {...other}/>
+                    {linkedInUrl && <LinkedInButton linkedInUrl={linkedInUrl}/>}
+                </div>
+            </CardActions>
+        </animated.div>
+    )
 }

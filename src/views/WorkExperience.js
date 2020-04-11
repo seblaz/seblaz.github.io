@@ -5,8 +5,8 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from "@material-ui/styles";
-import ContentWrapper from "components/ContentWrapper";
-import ContentTitle from "../components/ContentTitle";
+import ContentWrapper from "components/common/ContentWrapper";
+import ContentTitle from "components/common/ContentTitle";
 
 import senderos from "assets/img/work-experience/senderos.jpg";
 import fiuba from "assets/img/work-experience/fiuba.png";

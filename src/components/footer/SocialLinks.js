@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
 
+
 const useStyles = makeStyles(theme => ({
   socialItem: {
     display: 'flex',

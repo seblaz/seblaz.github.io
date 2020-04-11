@@ -7,8 +7,9 @@ import predictingUserConversions from 'assets/img/proyects/predicting-user-conve
 import finalFight from 'assets/img/proyects/final fight.png';
 import winAutomation from 'assets/img/proyects/automation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
-import ContentWrapper from "components/ContentWrapper";
-import ContentTitle from "../components/ContentTitle";
+import ayudanteVirtual from 'assets/img/proyects/ayudante virutual.png';
+import ContentWrapper from "components/common/ContentWrapper";
+import ContentTitle from "components/common/ContentTitle";
 
 
 const projects = [
@@ -47,7 +48,15 @@ const projects = [
         description: 'Diseño de un nuevo tema para utilizar en Prestashop, una plataforma de ventas online.',
         namespace: 'seblaz',
         repo: 'CuadernosYa',
-        anchor: 'CuadernosYa'
+        anchor: 'cuadernosya-tema-violeta'
+    }, {
+        title: 'Ayudante Virtual',
+        imgSource: ayudanteVirtual,
+        description: 'Bot de Slack que sirve como asistente virtual para realizar consultas que no pueden ser compartidas en canales públicos.',
+        namespace: 'seblaz',
+        repo: 'Ayudante-virtual',
+        anchor: 'ayudante-virtual',
+        linkedInUrl: 'https://www.linkedin.com/pulse/ayudante-virtual-en-fiuba-sebasti%C3%A1n-bl%C3%A1zquez/'
     }];
 
 export default () => {
