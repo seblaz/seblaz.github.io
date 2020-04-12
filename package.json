@@ -24,7 +24,9 @@
     "react-scripts": "^3.4.1",
     "react-spring": "^8.0.27",
     "react-switch": "^5.0.1",
-    "typeface-roboto": "^0.0.75"
+    "typeface-roboto": "^0.0.75",
+    "react-router": "^5.1.2",
+    "history": "^4.10.1"
   },
   "scripts": {
     "start": "react-scripts start",
