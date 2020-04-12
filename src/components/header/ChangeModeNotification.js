@@ -7,13 +7,11 @@ import ThemeModeContext from "contexts/ThemeModeContext";
 
 const useStyles = makeStyles(theme => ({
     snackbarRoot: {
-        left: '50%',
-        right: 'auto',
-        bottom: theme.spacing(3),
-        transform: 'translateX(-50%)'
+        marginBottom: theme.spacing(3)
     },
     contentRoot: {
         minWidth: 'auto',
+        flexGrow: 'initial',
         background: theme.palette.secondary[theme.palette.type],
     },
     contentMessage: {
