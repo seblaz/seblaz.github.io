@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {Typography} from '@material-ui/core';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -10,6 +10,14 @@ import ExpandMoreIconWithTransition from "components/common/ExpandMoreIconWithTr
 
 
 const useStyles = makeStyles(theme => ({
+    // Remove weird highlight.
+    actionArea: {
+        "&:hover $focusHighlight": {
+            opacity: 0
+        }
+    },
+    focusHighlight: {},
+    // Other.
     media: {
         height: 140,
     },
@@ -28,9 +36,6 @@ const useStyles = makeStyles(theme => ({
         background: ({backgroundOpacity}) => Color('black').alpha(0.35 + backgroundOpacity).rgb().string(),
         height: '100%'
     },
-    cardContent: {
-        display: 'flex'
-    },
     expandMore: {
         position: 'absolute',
         right: 0,
@@ -42,34 +47,35 @@ export default ({title, imgSource, description, backgroundOpacity, cardFocused, 
     const classes = useStyles({backgroundOpacity: backgroundOpacity || 0});
 
     return (
-        <Fragment>
-            <CardActionArea>
-                <div className={classes.titleContainer}>
-                    <CardMedia
-                        className={classes.media}
-                        image={imgSource}
-                        title={title}
-                    >
-                        <div className={classes.backgroundOverlay}/>
-                    </CardMedia>
-                    <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-                        {title}
-                    </Typography>
+        <CardActionArea classes={{
+            root: classes.actionArea,
+            focusHighlight: classes.focusHighlight
+        }}>
+            <div className={classes.titleContainer}>
+                <CardMedia
+                    className={classes.media}
+                    image={imgSource}
+                    title={title}
+                >
+                    <div className={classes.backgroundOverlay}/>
+                </CardMedia>
+                <Typography className={classes.title} gutterBottom variant="h5" component="h2">
+                    {title}
+                </Typography>
+            </div>
+            <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    {description}
+                    <span>{'\xa0'.repeat(10)}</span>{/* Pequeño hack para no superponer el ícono y el texto. \xa0 = non breaking space. */}
+                </Typography>
+                <div className={classes.expandMore}>
+                    <ExpandMoreIconWithTransition
+                        onTouchEnd={onTouchEnd}
+                        expanded={cardFocused}
+                    />
                 </div>
-                <CardContent className={classes.cardContent}>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        {description}
-                        <span>{'\xa0'.repeat(10)}</span>{/* Pequeño hack para no superponer el ícono y el texto. \xa0 = non breaking space. */}
-                    </Typography>
-                    <div className={classes.expandMore}>
-                        <ExpandMoreIconWithTransition
-                            onTouchEnd={onTouchEnd}
-                            expanded={cardFocused}
-                        />
-                    </div>
-                </CardContent>
-            </CardActionArea>
+            </CardContent>
             <ProjectCardActions show={cardFocused} {...other}/>
-        </Fragment>
+        </CardActionArea>
     )
 }

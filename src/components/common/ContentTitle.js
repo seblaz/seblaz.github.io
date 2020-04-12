@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     title: {
         display: 'flex',
         justifyContent: 'center',
-        color: theme.palette.primary.dark,
+        color: theme.palette.primary[theme.palette.contrastType],
         margin: theme.spacing(2)
     }
 }));

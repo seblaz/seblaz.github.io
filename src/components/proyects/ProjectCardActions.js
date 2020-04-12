@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         justifyContent: 'space-evenly',
         width: '100%',
+        margin: theme.spacing(0, 2.5),
         [theme.breakpoints.down('md')]: {
             display: 'block',
         }

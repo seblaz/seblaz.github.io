@@ -10,7 +10,7 @@ import ContentTitle from "components/common/ContentTitle";
 
 import senderos from "assets/img/work-experience/senderos.jpg";
 import fiuba from "assets/img/work-experience/fiuba.png";
-import ibm from "assets/img/work-experience/ibm.webp";
+import ibm from "assets/img/work-experience/ibm.png";
 import ministerio from "assets/img/work-experience/ministerio.jpg";
 import american from "assets/img/work-experience/american.png";
 

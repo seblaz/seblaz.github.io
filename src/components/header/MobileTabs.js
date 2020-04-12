@@ -14,19 +14,29 @@ const useStyles = makeStyles(theme => ({
     left: 0
   },
   tabWrapper: {
-    alignItems: 'flex-start',
-    marginLeft: 0,
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(2),
-    }
+    alignItems: 'baseline'
   }
 }));
 
-export default () => {
+export default ({onTabClick}) => {
   const classes = useStyles();
 
   return (
-    <Tabs tabsProps={{orientation: 'vertical', classes: {indicator: classes.indicator}}}
-          tabProps={{className: classes.tabItem}}/>
+    <Tabs
+        tabsProps={{
+          orientation: 'vertical',
+          classes: {
+            indicator: classes.indicator
+          }
+        }}
+
+        tabProps={{
+          className: classes.tabItem,
+          classes: {
+            wrapper: classes.tabWrapper
+          },
+          onClick: onTabClick
+        }}
+    />
   );
 }

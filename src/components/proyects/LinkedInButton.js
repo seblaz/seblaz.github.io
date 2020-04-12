@@ -15,9 +15,10 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 2,
         borderStyle: 'solid',
         // Font.
-        color: theme.palette.secondary.dark,
+        color: theme.palette.secondary[theme.palette.contrastType],
         textDecoration: 'none',
         fontSize: theme.typography.htmlFontSize,
+        fontWeight: 'bold',
         // Spacing.
         display: 'flex',
         alignItems: 'center',
@@ -25,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(0, 2)
     },
     linked: {
-        color: 'black',
+        color: theme.palette.text.primary,
         fontWeight: 'bold',
         paddingLeft: 4,
         paddingRight: 1

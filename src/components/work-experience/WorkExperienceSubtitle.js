@@ -24,7 +24,7 @@ const dateToString = (date) => {
 
 const useStyles = makeStyles(theme => ({
     subheader: {
-        color: theme.palette.grey[600]
+        color: theme.palette.text.secondary
     },
     span: {
         display: 'inline-block'

@@ -4,6 +4,7 @@ import {Link, useLocation} from 'react-router-dom';
 import Tab from '@material-ui/core/Tab';
 import {content} from 'sections/Content'
 
+
 export default ({tabsProps, tabProps}) => {
   const location = useLocation();
   const tab = location.pathname.split('/')[1];

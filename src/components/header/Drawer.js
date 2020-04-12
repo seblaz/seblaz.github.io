@@ -2,21 +2,19 @@ import React from 'react';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import {makeStyles} from '@material-ui/styles';
 import ModeToggle from 'components/header/ThemeModeToggle';
-import Logo from 'components/common/Logo';
 import MobileTabs from 'components/header/MobileTabs';
 
 const useStyles = makeStyles(theme => ({
+  drawerPaper: {
+    background: theme.palette.primary.main
+  },
   firstRow: {
     display: 'flex',
-    alignItems: 'center',
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      margin: theme.spacing(2),
-    }
+    justifyContent: 'center'
   },
   themeModeToggle: {
-    marginLeft: theme.spacing(1)
+    marginTop: theme.spacing(4.5),
+    marginBottom: theme.spacing(2.5)
   }
 }));
 
@@ -32,12 +30,12 @@ export default ({open, onClose, onOpen}) => {
       open={open}
       onClose={onClose}
       onOpen={onOpen}
+      classes={{paper: classes.drawerPaper}}
     >
       <div className={classes.firstRow}>
-        <Logo/>
         <ModeToggle className={classes.themeModeToggle}/>
       </div>
-      <MobileTabs/>
+      <MobileTabs onTabClick={onClose}/>
     </SwipeableDrawer>
   )
 }

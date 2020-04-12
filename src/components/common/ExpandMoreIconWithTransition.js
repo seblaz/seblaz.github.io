@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const useStyles = makeStyles(theme => ({
     expand: {
         margin: theme.spacing(1, 1.3),
-        color: theme.palette.secondary.light,
+        color: theme.palette.secondary.main,
         [theme.breakpoints.down('xs')]: {
             marginLeft: theme.spacing(0.4)
         },

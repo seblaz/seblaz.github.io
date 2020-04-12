@@ -38,7 +38,8 @@ export default ({children}) => {
             main: '#B531CC',
             lighter: ratio => Color('#B531CC').lighten(ratio / 100).hex()
           },
-          type: themeMode
+          type: themeMode,
+          contrastType: themeMode === 'dark' ? 'light' : 'dark'
         },
       }),
     [themeMode],

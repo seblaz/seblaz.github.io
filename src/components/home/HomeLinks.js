@@ -25,7 +25,11 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         justifyContent: 'center'
     },
-    smallButtons: {
+    button: {
+        color: theme.palette.secondary[theme.palette.contrastType],
+        borderColor: theme.palette.secondary[theme.palette.contrastType]
+    },
+    smallButton: {
         margin: theme.spacing(1, 0)
     }
 }));
@@ -43,6 +47,7 @@ export default () => {
                         size="large"
                         component={Link}
                         to="/experiencia_laboral"
+                        className={classes.button}
                     >
                         Ver Experiencia laboral
                     </Button>
@@ -57,6 +62,7 @@ export default () => {
                         size="large"
                         component={Link}
                         to="/proyectos"
+                        className={classes.button}
                     >
                         Ver proyectos
                     </Button>
@@ -71,7 +77,7 @@ export default () => {
                         size="medium"
                         component={Link}
                         to="/proyectos"
-                        className={classes.smallButtons}
+                        className={`${classes.smallButton} ${classes.button}`}
                     >
                         Ver proyectos
                     </Button>
@@ -83,7 +89,7 @@ export default () => {
                         size="medium"
                         component={Link}
                         to="/experiencia_laboral"
-                        className={classes.smallButtons}
+                        className={`${classes.smallButton} ${classes.button}`}
                     >
                         Ver Experiencia laboral
                     </Button>
