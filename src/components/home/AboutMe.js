@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center'
     },
     dividerRoot: {
-        backgroundColor: theme.palette.secondary.lighter(50)
+        backgroundColor: theme.palette.type === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.lighter(50)
     }
 }));
 
