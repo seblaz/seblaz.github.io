@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {Router} from "react-router";
 import {createBrowserHistory as createHistory} from "history";
 
@@ -10,18 +10,14 @@ import {createBrowserHistory as createHistory} from "history";
 export default (props) => {
     const history = createHistory(props);
     const prevHistoryPush = history.push;
-    const lastLocation = useRef(null);
 
     useEffect(() => {
         // monkey patching to prevent pushing same url into history stack
-        history.listen(location => {
-            lastLocation.current = location
-        });
-
         history.push = (pathname, state = {}) => {
-            if (lastLocation.current === null ||
-                pathname !== lastLocation.current.pathname + lastLocation.current.search + lastLocation.current.hash ||
-                JSON.stringify(state) !== JSON.stringify(lastLocation.current.state)
+            const lastLocation = history.location;
+            console.log(lastLocation, pathname, state);
+            if (pathname !== lastLocation.pathname + lastLocation.search + lastLocation.hash ||
+                JSON.stringify(state) !== JSON.stringify(lastLocation.state || {})
             ) {
                 prevHistoryPush(pathname, state)
             }
