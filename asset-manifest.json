@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.06735d8c.chunk.css",
-    "main.js": "/static/js/main.319bbac0.chunk.js",
-    "main.js.map": "/static/js/main.319bbac0.chunk.js.map",
+    "main.js": "/static/js/main.202cec2a.chunk.js",
+    "main.js.map": "/static/js/main.202cec2a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c17be1a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.c17be1a6.js.map",
     "static/css/2.47271137.chunk.css": "/static/css/2.47271137.chunk.css",
-    "static/js/2.af859b6d.chunk.js": "/static/js/2.af859b6d.chunk.js",
-    "static/js/2.af859b6d.chunk.js.map": "/static/js/2.af859b6d.chunk.js.map",
+    "static/js/2.68cbd703.chunk.js": "/static/js/2.68cbd703.chunk.js",
+    "static/js/2.68cbd703.chunk.js.map": "/static/js/2.68cbd703.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e362c4d1f87f2e1edeab431155a1a85.js": "/precache-manifest.4e362c4d1f87f2e1edeab431155a1a85.js",
+    "precache-manifest.2fc06a3cb571c476d94ceed7ebcc3b1c.js": "/precache-manifest.2fc06a3cb571c476d94ceed7ebcc3b1c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.47271137.chunk.css.map": "/static/css/2.47271137.chunk.css.map",
-    "static/css/main.06735d8c.chunk.css.map": "/static/css/main.06735d8c.chunk.css.map",
-    "static/js/2.af859b6d.chunk.js.LICENSE.txt": "/static/js/2.af859b6d.chunk.js.LICENSE.txt",
+    "static/js/2.68cbd703.chunk.js.LICENSE.txt": "/static/js/2.68cbd703.chunk.js.LICENSE.txt",
     "static/media/Curriculum_Vitae.pdf": "/static/media/Curriculum_Vitae.15ec2dcc.pdf",
     "static/media/SB.7277acbd.svg": "/static/media/SB.7277acbd.svg",
     "static/media/automation.svg": "/static/media/automation.ce213866.svg",
@@ -21,9 +19,8 @@
     "static/media/background.jpg": "/static/media/background.bee36bb7.jpg",
     "static/media/cuadernos ya.jpg": "/static/media/cuadernos ya.f260072a.jpg",
     "static/media/final fight.png": "/static/media/final fight.612f91a8.png",
-    "static/media/fiuba.png": "/static/media/fiuba.0e084944.png",
+    "static/media/fiuba.png": "/static/media/fiuba.927d6d98.png",
     "static/media/github icon.c6ef2fba.svg": "/static/media/github icon.c6ef2fba.svg",
-    "static/media/ibm.webp": "/static/media/ibm.adbe3731.webp",
     "static/media/ministerio.jpg": "/static/media/ministerio.8f407bc0.jpg",
     "static/media/perfil.png": "/static/media/perfil.83530dd1.png",
     "static/media/predicting-user-conversions.jpg": "/static/media/predicting-user-conversions.fdb10b2f.jpg",
@@ -34,8 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.c17be1a6.js",
     "static/css/2.47271137.chunk.css",
-    "static/js/2.af859b6d.chunk.js",
-    "static/css/main.06735d8c.chunk.css",
-    "static/js/main.319bbac0.chunk.js"
+    "static/js/2.68cbd703.chunk.js",
+    "static/js/main.202cec2a.chunk.js"
   ]
 }
