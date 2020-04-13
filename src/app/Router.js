@@ -15,7 +15,6 @@ export default (props) => {
         // monkey patching to prevent pushing same url into history stack
         history.push = (pathname, state = {}) => {
             const lastLocation = history.location;
-            console.log(lastLocation, pathname, state);
             if (pathname !== lastLocation.pathname + lastLocation.search + lastLocation.hash ||
                 JSON.stringify(state) !== JSON.stringify(lastLocation.state || {})
             ) {
