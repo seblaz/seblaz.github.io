@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import WorkExperienceDownloadButton from "components/work-experience/WorkExperienceDownloadButton";
 import WorkExperience from "components/work-experience/WorkExperience";
 import Container from "@material-ui/core/Container";
@@ -13,6 +13,7 @@ import fiuba from "assets/img/work-experience/fiuba.png";
 import ibm from "assets/img/work-experience/ibm.png";
 import ministerio from "assets/img/work-experience/ministerio.jpg";
 import american from "assets/img/work-experience/american.png";
+import MetaInfo from "components/common/MetaInfo";
 
 
 const workExperience = [
@@ -93,18 +94,25 @@ export default () => {
     const matchesXs = useMediaQuery(theme.breakpoints.only('xs'));
 
     return (
-        <ContentWrapper>
-            <Container maxWidth="md" disableGutters={matchesXs}>
-                <ContentTitle title="Experiencia laboral"/>
-                <Grid container spacing={2}>
-                    {workExperience.map((workExp, index) =>
-                        <Grid item key={index} xs={12}>
-                            <WorkExperience {...workExp}/>
-                        </Grid>
-                    )}
-                    <WorkExperienceDownloadButton/>
-                </Grid>
-            </Container>
-        </ContentWrapper>
+        <Fragment>
+            <MetaInfo
+                title={'Seblaz | Experiencia laboral'}
+                description='Experiencia laboral de Seblaz (Sebastián Blázquez).'
+                relativeUrl='/experiencia_laboral'
+            />
+            <ContentWrapper>
+                <Container maxWidth="md" disableGutters={matchesXs}>
+                    <ContentTitle title="Experiencia laboral"/>
+                    <Grid container spacing={2}>
+                        {workExperience.map((workExp, index) =>
+                            <Grid item key={index} xs={12}>
+                                <WorkExperience {...workExp}/>
+                            </Grid>
+                        )}
+                        <WorkExperienceDownloadButton/>
+                    </Grid>
+                </Container>
+            </ContentWrapper>
+        </Fragment>
     )
 }

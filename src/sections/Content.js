@@ -1,5 +1,4 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
 import {Switch, Route} from 'react-router-dom';
 
 import Home from 'views/Home';
@@ -27,20 +26,14 @@ export default () => {
         <Animation location={location}>
             <Switch location={location}>
                 <Route exact path='/'>
-                    <Helmet title='Seblaz'/>
                     <Home/>
                 </Route>
                 {content.map(({label, route, Component}, key) =>
                     <Route exact path={route} key={key}>
-                        <Helmet title={`Seblaz | ${label}`}/>
                         <Component/>
                     </Route>
                 )}
                 <Route>
-                    <Helmet
-                        title={'Seblaz | 404 Not Found'}
-                        meta={[{name: 'ROBOTS', content: 'NOINDEX'}]}
-                    />
                     <NotFound/>
                 </Route>
             </Switch>

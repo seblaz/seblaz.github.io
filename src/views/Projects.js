@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Grid from '@material-ui/core/Grid';
 import ProjectCard from 'components/proyects/ProjectCard';
 
@@ -10,6 +10,7 @@ import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
 import ayudanteVirtual from 'assets/img/proyects/ayudante virutual.png';
 import ContentWrapper from "components/common/ContentWrapper";
 import ContentTitle from "components/common/ContentTitle";
+import MetaInfo from "components/common/MetaInfo";
 
 
 const projects = [
@@ -63,18 +64,25 @@ export default () => {
     const spacing = 3;
 
     return (
-        <ContentWrapper>
-            <ContentTitle title="Proyectos"/>
-            <Grid
-                container
-                alignItems="flex-start"
-                spacing={spacing}
-            >
-                {projects.map((projectData, key) =>
-                    <Grid container item xs={12} md={4} sm={6} key={key} style={{position: 'relative'}}>
-                        <ProjectCard {...projectData} spacing={spacing}/>
-                    </Grid>)}
-            </Grid>
-        </ContentWrapper>
+        <Fragment>
+            <MetaInfo
+                title={'Seblaz | Proyectos'}
+                description='Proyectos de Seblaz (Sebastián Blázquez).'
+                relativeUrl='/proyectos'
+            />
+            <ContentWrapper>
+                <ContentTitle title="Proyectos"/>
+                <Grid
+                    container
+                    alignItems="flex-start"
+                    spacing={spacing}
+                >
+                    {projects.map((projectData, key) =>
+                        <Grid container item xs={12} md={4} sm={6} key={key} style={{position: 'relative'}}>
+                            <ProjectCard {...projectData} spacing={spacing}/>
+                        </Grid>)}
+                </Grid>
+            </ContentWrapper>
+        </Fragment>
     )
-}
+};
