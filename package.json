@@ -29,10 +29,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "react-snap",
+    "postbuild": "react-snap && node src/utils/removeBuildDepth.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "demo": "node src/demo.js"
+    "demo": "node src/utils/demo.js"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -4,10 +4,12 @@ import {makeStyles} from '@material-ui/styles';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';
 
+
 const useStyles = makeStyles(theme => ({
   link: {
     textAlign: 'center',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    outline: 0
   },
   logoWrapper: {
     display: ({showName}) => showName ? 'block' : 'flex'
