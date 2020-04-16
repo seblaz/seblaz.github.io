@@ -5,8 +5,8 @@ import preview from 'assets/img/preview.png';
 
 export default ({title, description, relativeUrl = ''}) => {
 
-    const baseUrl = 'http://seblaz.github.io/';
-    const domain = 'seblaz.github.io/';
+    const baseUrl = 'http://seblaz.github.io';
+    const domain = 'seblaz.github.io';
 
     return (
         <Helmet
