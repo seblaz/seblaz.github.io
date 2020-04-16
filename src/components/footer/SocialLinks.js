@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
-import {Link} from 'react-router-dom';
 
 
 const useStyles = makeStyles(theme => ({
