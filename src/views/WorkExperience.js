@@ -97,7 +97,7 @@ export default () => {
         <Fragment>
             <MetaInfo
                 title={'Seblaz | Experiencia laboral'}
-                description='Experiencia laboral de Seblaz (Sebastián Blázquez).'
+                description='Experiencia laboral de Sebastián Blázquez.'
                 relativeUrl='/experiencia_laboral'
             />
             <ContentWrapper>

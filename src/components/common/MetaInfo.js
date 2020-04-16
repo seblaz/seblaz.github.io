@@ -5,18 +5,18 @@ import preview from 'assets/img/preview.png';
 
 export default ({title, description, relativeUrl = ''}) => {
 
-    const baseUrl = 'https://0ef410d0.ngrok.io';
-    const domain = '0ef410d0.ngrok.io';
+    const baseUrl = 'http://seblaz.github.io/';
+    const domain = 'seblaz.github.io/';
 
     return (
         <Helmet
-            title={title}
+            title={`Seblaz${title ? ' | ' + title : ''}`}
             meta={[
                 // Regular Meta tags
                 {name: 'description', content: description},
 
                 // facebook open graph tags
-                {property: 'og:title', content: title},
+                {property: 'og:title', content: 'Seblaz'},
                 {property: 'og:description', content: description},
                 {property: 'og:url', content: baseUrl + relativeUrl},
                 {property: 'og:type', content: 'website'},

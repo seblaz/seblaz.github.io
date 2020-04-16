@@ -24,7 +24,7 @@ export default () => {
         <Fragment>
             <MetaInfo
                 title='Seblaz'
-                description='Portfolio de Seblaz (Sebastián Blázquez).'
+                description='Portfolio de Sebastián Blázquez.'
             />
             <HomePresentation/>
             <ContentWrapper>
