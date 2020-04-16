@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.6c72047b.chunk.js",
-    "main.js.map": "/static/js/main.6c72047b.chunk.js.map",
+    "main.js": "/static/js/main.687752dd.chunk.js",
+    "main.js.map": "/static/js/main.687752dd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c17be1a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.c17be1a6.js.map",
     "static/css/2.47271137.chunk.css": "/static/css/2.47271137.chunk.css",
-    "static/js/2.1b11956e.chunk.js": "/static/js/2.1b11956e.chunk.js",
-    "static/js/2.1b11956e.chunk.js.map": "/static/js/2.1b11956e.chunk.js.map",
+    "static/js/2.ce7b8e12.chunk.js": "/static/js/2.ce7b8e12.chunk.js",
+    "static/js/2.ce7b8e12.chunk.js.map": "/static/js/2.ce7b8e12.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4976172e2e88bccb3bbd9e87891d10b6.js": "/precache-manifest.4976172e2e88bccb3bbd9e87891d10b6.js",
+    "precache-manifest.4411540030eb44c3975aee99ef5c28af.js": "/precache-manifest.4411540030eb44c3975aee99ef5c28af.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.47271137.chunk.css.map": "/static/css/2.47271137.chunk.css.map",
-    "static/js/2.1b11956e.chunk.js.LICENSE.txt": "/static/js/2.1b11956e.chunk.js.LICENSE.txt",
+    "static/js/2.ce7b8e12.chunk.js.LICENSE.txt": "/static/js/2.ce7b8e12.chunk.js.LICENSE.txt",
     "static/media/Curriculum_Vitae.pdf": "/static/media/Curriculum_Vitae.15ec2dcc.pdf",
     "static/media/SB.7277acbd.svg": "/static/media/SB.7277acbd.svg",
     "static/media/automation.svg": "/static/media/automation.ce213866.svg",
@@ -24,6 +24,7 @@
     "static/media/ministerio.jpg": "/static/media/ministerio.8f407bc0.jpg",
     "static/media/perfil.png": "/static/media/perfil.83530dd1.png",
     "static/media/predicting-user-conversions.jpg": "/static/media/predicting-user-conversions.fdb10b2f.jpg",
+    "static/media/preview.png": "/static/media/preview.01f6c2c3.png",
     "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2",
     "static/media/senderos.jpg": "/static/media/senderos.ff28f22a.jpg",
     "static/media/snake.jpg": "/static/media/snake.f3aacf1b.jpg"
@@ -31,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.c17be1a6.js",
     "static/css/2.47271137.chunk.css",
-    "static/js/2.1b11956e.chunk.js",
-    "static/js/main.6c72047b.chunk.js"
+    "static/js/2.ce7b8e12.chunk.js",
+    "static/js/main.687752dd.chunk.js"
   ]
 }
