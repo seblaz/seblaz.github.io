@@ -22,9 +22,6 @@ export default ({title, description, relativeUrl = ''}) => {
                 {property: 'og:type', content: 'website'},
                 {property: 'og:locale', content: 'es_AR'},
                 {property: 'og:image', content: baseUrl + preview},
-                {property: 'og:image:type', content: 'image/png'},
-                {property: 'og:image:width', content: 512},
-                {property: 'og:image:height', content: 512},
 
                 // twitter card tags additive with the og: tags
                 {name: "twitter:card", content: "summary"},

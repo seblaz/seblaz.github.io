@@ -23,7 +23,6 @@ export default () => {
     return (
         <Fragment>
             <MetaInfo
-                title='Seblaz'
                 description='Portfolio de Sebastián Blázquez.'
             />
             <HomePresentation/>
