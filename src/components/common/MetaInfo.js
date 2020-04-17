@@ -30,7 +30,7 @@ export default ({title, description, image, relativeUrl = ''}) => {
                 {name: "twitter:image", content: baseUrl + image},
                 {name: "twitter:image:alt", content: 'developer logo'},
                 {name: "twitter:url", value: baseUrl},
-                {name: "twitter:label1", value: "👨‍💻 GitHub"},
+                {name: "twitter:label1", value: "💻 GitHub"},
                 {name: "twitter:data1", value: "github.com/seblaz"},
                 {name: "twitter:label2", value: "💼 LinkedIn"},
                 {name: "twitter:data2", value: "linkedin.com/in/sebastian-blazquez"},

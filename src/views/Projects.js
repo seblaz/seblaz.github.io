@@ -11,7 +11,7 @@ import finalFight from 'assets/img/proyects/final fight.png';
 import winAutomation from 'assets/img/proyects/automation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
 import ayudanteVirtual from 'assets/img/proyects/ayudante virutual.png';
-import preview from 'assets/img/previews/experiencia_laboral.png';
+import preview from 'assets/img/previews/proyectos.png';
 
 
 const projects = [
