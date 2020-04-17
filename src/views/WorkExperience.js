@@ -7,13 +7,14 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from "@material-ui/styles";
 import ContentWrapper from "components/common/ContentWrapper";
 import ContentTitle from "components/common/ContentTitle";
+import MetaInfo from "components/common/MetaInfo";
 
 import senderos from "assets/img/work-experience/senderos.jpg";
 import fiuba from "assets/img/work-experience/fiuba.png";
 import ibm from "assets/img/work-experience/ibm.png";
 import ministerio from "assets/img/work-experience/ministerio.jpg";
 import american from "assets/img/work-experience/american.png";
-import MetaInfo from "components/common/MetaInfo";
+import preview from "assets/img/previews/experiencia_laboral.png";
 
 
 const workExperience = [
@@ -99,6 +100,7 @@ export default () => {
                 title={'Experiencia laboral'}
                 description='Experiencia laboral de Sebastián Blázquez.'
                 relativeUrl='/experiencia_laboral'
+                image={preview}
             />
             <ContentWrapper>
                 <Container maxWidth="md" disableGutters={matchesXs}>

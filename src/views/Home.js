@@ -7,6 +7,8 @@ import AboutMe from "components/home/AboutMe";
 import HomeLinks from "components/home/HomeLinks";
 import MetaInfo from "components/common/MetaInfo";
 
+import preview from "assets/img/previews/home.png";
+
 
 const useStyles = makeStyles(theme => ({
     paper: {
@@ -24,6 +26,7 @@ export default () => {
         <Fragment>
             <MetaInfo
                 description='Portfolio de Sebastián Blázquez.'
+                image={preview}
             />
             <HomePresentation/>
             <ContentWrapper>

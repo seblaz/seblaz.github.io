@@ -1,17 +1,17 @@
 import React, {Fragment} from 'react';
-import {Helmet} from "react-helmet";
+import MetaInfo from "components/common/MetaInfo";
+import preview from "assets/img/previews/404.png";
 
 
 export default () => {
 
     return (
         <Fragment>
-            <Helmet
-                title={'Seblaz | 404 Not Found'}
-                meta={[
-                    {name: 'ROBOTS', content: 'NOINDEX'},
-                    {name: 'description', content: '404 Not found'}
-                ]}
+            <MetaInfo
+                title={'404 Not Found'}
+                description='Error, página no encontrada.'
+                relativeUrl='/404'
+                image={preview}
             />
             <div>It looks like you are lost.</div>
         </Fragment>

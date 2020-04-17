@@ -9,7 +9,11 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'column',
         minHeight: 'calc(100vh)',
         // Color.
-        backgroundColor: theme.palette.background.default
+        backgroundColor: theme.palette.background.default,
+        // Caret.
+        userSelect: 'none',
+        // Transition.
+        transition: 'background .5s ease',
     }
 }));
 

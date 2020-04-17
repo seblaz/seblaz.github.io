@@ -1,6 +1,9 @@
 import React, {Fragment} from 'react';
 import Grid from '@material-ui/core/Grid';
 import ProjectCard from 'components/proyects/ProjectCard';
+import ContentWrapper from "components/common/ContentWrapper";
+import ContentTitle from "components/common/ContentTitle";
+import MetaInfo from "components/common/MetaInfo";
 
 import matrix from 'assets/img/proyects/snake.jpg';
 import predictingUserConversions from 'assets/img/proyects/predicting-user-conversions.jpg';
@@ -8,9 +11,7 @@ import finalFight from 'assets/img/proyects/final fight.png';
 import winAutomation from 'assets/img/proyects/automation.svg';
 import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
 import ayudanteVirtual from 'assets/img/proyects/ayudante virutual.png';
-import ContentWrapper from "components/common/ContentWrapper";
-import ContentTitle from "components/common/ContentTitle";
-import MetaInfo from "components/common/MetaInfo";
+import preview from 'assets/img/previews/experiencia_laboral.png';
 
 
 const projects = [
@@ -69,6 +70,7 @@ export default () => {
                 title={'Proyectos'}
                 description='Proyectos de Sebastián Blázquez.'
                 relativeUrl='/proyectos'
+                image={preview}
             />
             <ContentWrapper>
                 <ContentTitle title="Proyectos"/>

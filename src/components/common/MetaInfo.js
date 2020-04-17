@@ -1,9 +1,8 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import preview from 'assets/img/preview.png';
 
 
-export default ({title, description, relativeUrl = ''}) => {
+export default ({title, description, image, relativeUrl = ''}) => {
 
     const baseUrl = 'http://seblaz.github.io';
     const domain = 'seblaz.github.io';
@@ -21,20 +20,20 @@ export default ({title, description, relativeUrl = ''}) => {
                 {property: 'og:url', content: baseUrl + relativeUrl},
                 {property: 'og:type', content: 'website'},
                 {property: 'og:locale', content: 'es_AR'},
-                {property: 'og:image', content: baseUrl + preview},
+                {property: 'og:image', content: baseUrl + image},
 
                 // twitter card tags additive with the og: tags
                 {name: "twitter:card", content: "summary"},
                 {name: "twitter:domain", value: domain},
                 {name: "twitter:title", value: title},
                 {name: "twitter:description", value: description},
-                {name: "twitter:image", content: baseUrl + preview},
+                {name: "twitter:image", content: baseUrl + image},
                 {name: "twitter:image:alt", content: 'developer logo'},
                 {name: "twitter:url", value: baseUrl},
-                {name: "twitter:label1", value: "LinkedIn"},
-                {name: "twitter:data1", value: "linkedin.com/in/sebastian-blazquez"},
-                {name: "twitter:label2", value: "Correo electrónico"},
-                {name: "twitter:data2", value: "sebastian.blazquez96@gmail.com"},
+                {name: "twitter:label1", value: "👨‍💻 GitHub"},
+                {name: "twitter:data1", value: "github.com/seblaz"},
+                {name: "twitter:label2", value: "💼 LinkedIn"},
+                {name: "twitter:data2", value: "linkedin.com/in/sebastian-blazquez"},
             ]}
         />
     )
