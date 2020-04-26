@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a5ba9fbfe1e9bcc993185b296c74633",
+    "revision": "3c4d088f1361ff75062057f60b5fe6f8",
     "url": "/index.html"
   },
   {
-    "revision": "7930477dc3680678a8c3",
+    "revision": "7dd0fe093cae16db6376",
     "url": "/static/css/2.47271137.chunk.css"
   },
   {
-    "revision": "7930477dc3680678a8c3",
-    "url": "/static/js/2.95908740.chunk.js"
+    "revision": "7dd0fe093cae16db6376",
+    "url": "/static/js/2.60617846.chunk.js"
   },
   {
     "revision": "e52a7c7b6d481094f461dddcbab18065",
-    "url": "/static/js/2.95908740.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.60617846.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "05258c87959be28ae94a",
-    "url": "/static/js/main.91325085.chunk.js"
+    "revision": "5c15b0f6b20ba9f91d60",
+    "url": "/static/js/main.d04657ee.chunk.js"
   },
   {
     "revision": "3a24b8b27b57b2509bf8",
     "url": "/static/js/runtime-main.c17be1a6.js"
   },
   {
-    "revision": "15ec2dccf61a76d98c3f77e5adeac3e5",
-    "url": "/static/media/Curriculum_Vitae.15ec2dcc.pdf"
+    "revision": "4de34c86a87b186b9538ce72a442095e",
+    "url": "/static/media/Curriculum_Vitae.4de34c86.pdf"
   },
   {
     "revision": "7277acbdbe2006c8d21ed08f54fff390",
@@ -40,48 +40,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ayudante virutual.23c6f4e8.png"
   },
   {
-    "revision": "bee36bb775304128ae2e20fcb30e4772",
-    "url": "/static/media/background.bee36bb7.jpg"
+    "revision": "f9c932a0b2579e1cc6d71ee1aa5900f2",
+    "url": "/static/media/background.f9c932a0.jpeg"
   },
   {
-    "revision": "f260072a5d8a326e38ff91586e754041",
-    "url": "/static/media/cuadernos ya.f260072a.jpg"
+    "revision": "28415ab758e27c952ebe7af75fd519fb",
+    "url": "/static/media/cuadernos ya.28415ab7.jpeg"
   },
   {
-    "revision": "ddd3805dce98c9d629d047fb27ad1eee",
-    "url": "/static/media/experiencia_laboral.ddd3805d.png"
+    "revision": "c074c3946c667f71638df86f6a0c925d",
+    "url": "/static/media/experiencia_laboral.c074c394.png"
   },
   {
-    "revision": "612f91a8e54a57d15c7f31ddc5cf0959",
-    "url": "/static/media/final fight.612f91a8.png"
-  },
-  {
-    "revision": "927d6d98d135a501d3372b664cc503b9",
-    "url": "/static/media/fiuba.927d6d98.png"
+    "revision": "ccb0cc32170549a0aae58ea0c85c09c4",
+    "url": "/static/media/final fight.ccb0cc32.jpeg"
   },
   {
     "revision": "c6ef2fba427178ab82b862ba1d36133c",
     "url": "/static/media/github icon.c6ef2fba.svg"
   },
   {
-    "revision": "01f6c2c3ca9698964e150b6341fe12e3",
-    "url": "/static/media/home.01f6c2c3.png"
+    "revision": "f0253a5bc16ba5a11ef3bfc02693b63e",
+    "url": "/static/media/home.f0253a5b.png"
   },
   {
-    "revision": "8f407bc0c341a0b5deab1e66e83b9935",
-    "url": "/static/media/ministerio.8f407bc0.jpg"
+    "revision": "e84a5272030efc88c239dac1f86db138",
+    "url": "/static/media/ministerio.e84a5272.jpeg"
   },
   {
-    "revision": "83530dd17f6ac1f229dc858a780a5dda",
-    "url": "/static/media/perfil.83530dd1.png"
+    "revision": "3d7af0dd1191fac0a0c8e9843af2628b",
+    "url": "/static/media/perfil.3d7af0dd.jpeg"
   },
   {
-    "revision": "fdb10b2f50a08fe81067edbf5bf64dad",
-    "url": "/static/media/predicting-user-conversions.fdb10b2f.jpg"
+    "revision": "94b194893ce9045722ce397e32f81cfe",
+    "url": "/static/media/predicting-user-conversions.94b19489.jpeg"
   },
   {
-    "revision": "dac08c46c06f62bbe1332839ab6d36d5",
-    "url": "/static/media/proyectos.dac08c46.png"
+    "revision": "c2fe298c6e83c2561c4ebc5707f6eb97",
+    "url": "/static/media/proyectos.c2fe298c.png"
   },
   {
     "revision": "5cb7edfceb233100075dc9a1e12e8da3",
@@ -178,10 +174,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ebf6d1640ccddb99fb49f73c052c55a8",
     "url": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
-  },
-  {
-    "revision": "ff28f22aed10b901a761cc323ac06f1a",
-    "url": "/static/media/senderos.ff28f22a.jpg"
   },
   {
     "revision": "f3aacf1ba7823cb01c23259bd9c99a04",
