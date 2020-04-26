@@ -7,7 +7,7 @@ export default ({children}) => {
     const location = useLocation();
 
     useEffect(() => {
-        ReactGA.initialize('UA-163948163-1');
+        ReactGA.initialize('UA-163948163-1', {testMode: process.env.NODE_ENV === 'test'});
     });
 
     useEffect(() => {
