@@ -82,7 +82,7 @@ const workExperience = [
         workplace: "American Express",
         city: "Buenos Aires",
         from: new Date("2015 04"),
-        to: new Date("2016 11"),
+        to: new Date("2015 11"),
         description:
             "Procesamiento de tareas de Back Office (atención al cliente) y resolución " +
             "de solicitudes de clientes de la empresa.",
