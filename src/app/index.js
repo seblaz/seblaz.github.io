@@ -7,18 +7,21 @@ import Header from 'sections/Header';
 import Footer from 'sections/Footer';
 import Content from 'sections/Content';
 import Router from "app/Router";
+import Analytics from "app/Analytics";
 
 
 export default () => {
     return (
         <Theme>
             <Router>
-                <Background>
-                    <ScrollToTop/>
-                    <Header/>
-                    <Content/>
-                    <Footer/>
-                </Background>
+                <Analytics>
+                    <Background>
+                        <ScrollToTop/>
+                        <Header/>
+                        <Content/>
+                        <Footer/>
+                    </Background>
+                </Analytics>
             </Router>
         </Theme>
     )

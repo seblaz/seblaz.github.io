@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as SB} from 'assets/img/SB.svg'
+import {ReactComponent as SB} from 'assets/img/originals/SB.svg'
 import {makeStyles} from '@material-ui/styles';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';

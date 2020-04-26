@@ -22,19 +22,56 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center'
     },
     titleWrapper: {
-        width: '100%'
+        width: '100%',
+        marginTop: 'calc(-432px + 61.2vh)',
+        [theme.breakpoints.up('md')]: {
+            '@media (min-height:0px) and (max-height:550px)': {
+                marginTop: theme.spacing(2),
+            },
+        },
+        [theme.breakpoints.only('sm')]: {
+            marginTop: 'calc(-272px + 47vh)',
+            '@media (min-height:0px) and (max-height:450px)': {
+                marginTop: theme.spacing(2),
+            },
+        },
+        [theme.breakpoints.only('xs')]: {
+            marginTop: 'calc(-230px + 46vh)',
+            '@media (min-height:0px) and (max-height:400px)': {
+                marginTop: theme.spacing(2),
+            },
+        },
     },
     title:{
+        fontSize: '5rem',
+        [theme.breakpoints.only('sm')]: {
+            fontSize: '3.7rem',
+        },
         [theme.breakpoints.only('xs')]: {
-            fontSize: '4rem'
+            fontSize: '3rem'
         }
     },
     subtitle: {
         textAlign: 'right',
-        paddingTop: theme.spacing(5),
+        paddingTop: 'calc(-28px + 33vh)',
+        [theme.breakpoints.up('md')]: {
+            '@media (min-height:0px) and (max-height:550px)': {
+                paddingTop: theme.spacing(2),
+            },
+        },
+        [theme.breakpoints.only('sm')]: {
+            paddingTop: 'calc(30vh)',
+            fontSize: '1.8rem',
+            '@media (min-height:0px) and (max-height:450px)': {
+                paddingTop: theme.spacing(2),
+            },
+        },
         [theme.breakpoints.only('xs')]: {
-            fontSize: '1.7rem'
-        }
+            fontSize: '1.7rem',
+            '@media (min-height:0px) and (max-height:400px)': {
+                paddingTop: theme.spacing(2),
+            },
+        },
     }
 }));
 

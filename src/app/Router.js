@@ -4,7 +4,7 @@ import {createBrowserHistory as createHistory} from "history";
 
 
 /**
- * Same as BrowserRouter but doesn't push a location of it's the same
+ * Same as BrowserRouter but doesn't push a location if it's the same
  * as the current location.
  */
 export default (props) => {

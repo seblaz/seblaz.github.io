@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
-import perfil from 'assets/img/perfil.png';
+import perfil from 'assets/img/compressed/perfil.jpeg';
 import Divider from "@material-ui/core/Divider";
 import {Hidden} from "@material-ui/core";
 

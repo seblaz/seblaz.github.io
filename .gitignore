@@ -24,3 +24,6 @@ yarn-error.log*
 
 # ide
 .idea/
+
+# compressed images
+src/assets/img/compressed

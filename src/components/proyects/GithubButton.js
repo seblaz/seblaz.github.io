@@ -1,6 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/styles';
-import {ReactComponent as GitHubIcon} from 'assets/img/github icon.svg'
+import {ReactComponent as GitHubIcon} from 'assets/img/originals/github icon.svg'
 
 const themedStyles = {
     dark: {

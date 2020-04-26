@@ -7,7 +7,7 @@ import AboutMe from "components/home/AboutMe";
 import HomeLinks from "components/home/HomeLinks";
 import MetaInfo from "components/common/MetaInfo";
 
-import preview from "assets/img/previews/home.png";
+import preview from "assets/img/compressed/previews/home.png";
 
 
 const useStyles = makeStyles(theme => ({

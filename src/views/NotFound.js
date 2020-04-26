@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import MetaInfo from "components/common/MetaInfo";
-import preview from "assets/img/previews/404.png";
+import preview from "assets/img/compressed/previews/404.png";
 
 
 export default () => {

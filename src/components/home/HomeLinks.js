@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
             marginBottom: theme.spacing(0),
         },
         [theme.breakpoints.only('sm')]: {
-            marginTop: theme.spacing(4.5),
+            marginTop: theme.spacing(3),
         },
         [theme.breakpoints.only('xs')]: {
             marginTop: theme.spacing(2),
@@ -27,7 +27,10 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         color: theme.palette.secondary[theme.palette.contrastType],
-        borderColor: theme.palette.secondary[theme.palette.contrastType]
+        borderColor: theme.palette.secondary[theme.palette.contrastType],
+        [theme.breakpoints.only('sm')]: {
+            margin: theme.spacing(1.5, 0),
+        }
     },
     smallButton: {
         margin: theme.spacing(1, 0)

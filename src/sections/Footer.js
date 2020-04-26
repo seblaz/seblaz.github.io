@@ -4,8 +4,8 @@ import {makeStyles} from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Logo from 'components/common/Logo';
-import Typography from '@material-ui/core/Typography';
 import SocialLinks from 'components/footer/SocialLinks';
+import Notices from "components/footer/Notices";
 
 const useStyles = makeStyles(theme => ({
   appBar: {
@@ -21,11 +21,6 @@ const useStyles = makeStyles(theme => ({
   },
   gridContainer: {
     padding: theme.spacing(0.5)
-  },
-  copyright: {
-    display: 'flex',
-    justifyContent: 'center',
-    color: theme.palette.primary.lighter(70)
   }
 }));
 
@@ -42,8 +37,8 @@ export default () => {
           <Grid item xs={12} sm={9}>
             <SocialLinks/>
           </Grid>
-          <Grid item xs={12} className={classes.copyright}>
-            <Typography variant='h6'>Por Seblaz | Copyright © {new Date().getFullYear()}</Typography>
+          <Grid item xs={12}>
+            <Notices/>
           </Grid>
         </Grid>
       </Container>

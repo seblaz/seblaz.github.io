@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet";
 
 export default ({title, description, image, relativeUrl = ''}) => {
 
-    const baseUrl = 'http://seblaz.github.io';
+    const baseUrl = 'https://seblaz.github.io';
     const domain = 'seblaz.github.io';
 
     return (
@@ -20,7 +20,11 @@ export default ({title, description, image, relativeUrl = ''}) => {
                 {property: 'og:url', content: baseUrl + relativeUrl},
                 {property: 'og:type', content: 'website'},
                 {property: 'og:locale', content: 'es_AR'},
+                {property: 'og:site_name', content: 'Seblaz'},
                 {property: 'og:image', content: baseUrl + image},
+                {property: 'og:image:secure_url', content: baseUrl + image},
+                {property: 'og:image:type', content: `image/${image.split('.').pop()}`},
+                {property: 'og:image:alt', content: 'Preview'},
 
                 // twitter card tags additive with the og: tags
                 {name: "twitter:card", content: "summary"},

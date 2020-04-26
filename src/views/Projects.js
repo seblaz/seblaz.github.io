@@ -5,13 +5,13 @@ import ContentWrapper from "components/common/ContentWrapper";
 import ContentTitle from "components/common/ContentTitle";
 import MetaInfo from "components/common/MetaInfo";
 
-import matrix from 'assets/img/proyects/snake.jpg';
-import predictingUserConversions from 'assets/img/proyects/predicting-user-conversions.jpg';
-import finalFight from 'assets/img/proyects/final fight.png';
-import winAutomation from 'assets/img/proyects/automation.svg';
-import cuadernosYa from 'assets/img/proyects/cuadernos ya.jpg';
-import ayudanteVirtual from 'assets/img/proyects/ayudante virutual.png';
-import preview from 'assets/img/previews/proyectos.png';
+import matrix from 'assets/img/originals/proyects/snake.jpg';
+import predictingUserConversions from 'assets/img/compressed/proyects/predicting-user-conversions.jpeg';
+import finalFight from 'assets/img/compressed/proyects/final fight.jpeg';
+import winAutomation from 'assets/img/originals/proyects/automation.svg';
+import cuadernosYa from 'assets/img/compressed/proyects/cuadernos ya.jpeg';
+import ayudanteVirtual from 'assets/img/originals/proyects/ayudante virutual.png';
+import preview from 'assets/img/compressed/previews/proyectos.png';
 
 
 const projects = [

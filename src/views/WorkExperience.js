@@ -9,12 +9,12 @@ import ContentWrapper from "components/common/ContentWrapper";
 import ContentTitle from "components/common/ContentTitle";
 import MetaInfo from "components/common/MetaInfo";
 
-import senderos from "assets/img/work-experience/senderos.jpg";
-import fiuba from "assets/img/work-experience/fiuba.png";
-import ibm from "assets/img/work-experience/ibm.png";
-import ministerio from "assets/img/work-experience/ministerio.jpg";
-import american from "assets/img/work-experience/american.png";
-import preview from "assets/img/previews/experiencia_laboral.png";
+import senderos from "assets/img/compressed/work-experience/senderos.jpeg";
+import fiuba from "assets/img/compressed/work-experience/fiuba.jpeg";
+import ibm from "assets/img/compressed/work-experience/ibm.jpeg";
+import ministerio from "assets/img/compressed/work-experience/ministerio.jpeg";
+import american from "assets/img/compressed/work-experience/american.png";
+import preview from "assets/img/compressed/previews/experiencia_laboral.png";
 
 
 const workExperience = [
