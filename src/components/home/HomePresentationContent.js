@@ -25,19 +25,19 @@ const useStyles = makeStyles(theme => ({
         width: '100%',
         marginTop: 'calc(-432px + 61.2vh)',
         [theme.breakpoints.up('md')]: {
-            '@media (min-height:0px) and (max-height:550px)': {
+            '@media (min-height:0px) and (max-height:620px)': {
                 marginTop: theme.spacing(2),
             },
         },
         [theme.breakpoints.only('sm')]: {
             marginTop: 'calc(-272px + 47vh)',
-            '@media (min-height:0px) and (max-height:450px)': {
+            '@media (min-height:0px) and (max-height:550px)': {
                 marginTop: theme.spacing(2),
             },
         },
         [theme.breakpoints.only('xs')]: {
             marginTop: 'calc(-230px + 46vh)',
-            '@media (min-height:0px) and (max-height:400px)': {
+            '@media (min-height:0px) and (max-height:470px)': {
                 marginTop: theme.spacing(2),
             },
         },
@@ -55,20 +55,20 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'right',
         paddingTop: 'calc(-28px + 33vh)',
         [theme.breakpoints.up('md')]: {
-            '@media (min-height:0px) and (max-height:550px)': {
+            '@media (min-height:0px) and (max-height:620px)': {
                 paddingTop: theme.spacing(2),
             },
         },
         [theme.breakpoints.only('sm')]: {
             paddingTop: 'calc(30vh)',
             fontSize: '1.8rem',
-            '@media (min-height:0px) and (max-height:450px)': {
+            '@media (min-height:0px) and (max-height:550px)': {
                 paddingTop: theme.spacing(2),
             },
         },
         [theme.breakpoints.only('xs')]: {
             fontSize: '1.7rem',
-            '@media (min-height:0px) and (max-height:400px)': {
+            '@media (min-height:0px) and (max-height:470px)': {
                 paddingTop: theme.spacing(2),
             },
         },

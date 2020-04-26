@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     image: {
         top: -100,
         [theme.breakpoints.only('xs')]: {
-            '@media (min-height:460px)': {
+            '@media (min-height:470px)': {
                 left: '0% !important',
             },
         }
