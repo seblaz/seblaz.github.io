@@ -10,6 +10,7 @@ import ContentTitle from "components/common/ContentTitle";
 import MetaInfo from "components/common/MetaInfo";
 
 import senderos from "assets/img/compressed/work-experience/senderos.jpeg";
+import mulesoft from "assets/img/compressed/work-experience/mulesoft.jpeg";
 import fiuba from "assets/img/compressed/work-experience/fiuba.jpeg";
 import ibm from "assets/img/compressed/work-experience/ibm.jpeg";
 import ministerio from "assets/img/compressed/work-experience/ministerio.jpeg";
@@ -19,10 +20,19 @@ import preview from "assets/img/compressed/previews/experiencia_laboral.png";
 
 const workExperience = [
     {
+        title: "Software Engineer",
+        workplace: "Mulesoft",
+        city: "Buenos Aires",
+        from: new Date("2021 02"),
+        description:
+            "",
+        logo: mulesoft
+    }, {
         title: "Desarrolador PHP y SQL",
         workplace: "Asociación Mutual Senderos",
         city: "Buenos Aires",
         from: new Date("2020 02"),
+        to: new Date("2021 01"),
         description:
             "Desarrollador PHP y SQL del sistema de gestión de afiliaciones, atención " +
             "médica y auditoría de Mutual Senderos. En este proyecto también configuré " +
@@ -46,7 +56,7 @@ const workExperience = [
         workplace: "IBM",
         city: "Buenos Aires",
         from: new Date("2018 08"),
-        to: new Date("2020 02"),
+        to: new Date("2020 01"),
         description:
             "Desarrollador en RPA (Automatización Robótica de Procesos) utilizando " +
             "WinAutomation y Automation Anywhere. En este trabajo también desarrollé " +

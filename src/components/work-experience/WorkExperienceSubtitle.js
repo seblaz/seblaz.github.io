@@ -8,6 +8,7 @@ const calculatePeriod = (from, to = new Date()) => {
     let months = (to.getFullYear() - from.getFullYear()) * 12;
     months -= from.getMonth();
     months += to.getMonth();
+    months += 1;
 
     const years = Math.floor(months / 12);
     months -= (years * 12);

@@ -56,5 +56,8 @@ module.exports = [
     }, {
         relativePath: 'work-experience/senderos.jpg',
         resizeRatio: 0.1953125
+    }, {
+        relativePath: 'work-experience/mulesoft.jpeg',
+        resizeRatio: 1
     }
 ];
