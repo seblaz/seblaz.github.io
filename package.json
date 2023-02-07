@@ -30,7 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": " react-snap && react-snap-sitemap --base-url='https://seblaz.github.io/' && node src/utils/removeBuildDepth.js",
+    "postbuild": "react-snap && react-snap-sitemap --base-url='https://seblaz.github.io/' && node src/utils/removeBuildDepth.js",
     "pretest": "npm run compress",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

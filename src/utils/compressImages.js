@@ -18,7 +18,9 @@ const paths = {
 };
 
 console.log('Cleaning previous compressed files...');
-fs.rmdirSync(paths['compressed'], {recursive: true});
+if (fs.existsSync(paths['compressed'])) {
+    fs.rmSync(paths['compressed'], {recursive: true});
+}
 
 Promise.all(images.map(({relativePath, resizeRatio = 1, format = 'jpeg'}) => {
     const inputPath = path.join(paths['originals'], relativePath);
