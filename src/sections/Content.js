@@ -10,13 +10,13 @@ import Animation from "app/Animation";
 
 
 const content = [{
-    label: 'Proyectos',
-    route: '/proyectos',
-    Component: Projects
-}, {
-    label: 'Experiencia laboral',
-    route: '/experiencia_laboral',
+    label: 'Work experience',
+    route: '/work_experience',
     Component: WorkExperience
+}, {
+    label: 'Projects',
+    route: '/projects',
+    Component: Projects
 }];
 
 export default () => {

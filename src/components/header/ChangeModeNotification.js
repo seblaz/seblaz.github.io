@@ -42,8 +42,8 @@ export default () => {
     };
 
     const temas = {
-        'dark': 'oscuro',
-        'light': 'claro'
+        'dark': 'Dark',
+        'light': 'Light'
     };
 
     return (
@@ -55,7 +55,7 @@ export default () => {
             TransitionComponent={Slide}
         >
             <SnackbarContent
-                message={`¡Tema ${temas[themeMode]} activado!`}
+                message={`${temas[themeMode]} theme enabled`}
                 classes={{
                     root: classes.contentRoot,
                     message: classes.contentMessage

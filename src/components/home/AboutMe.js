@@ -47,10 +47,10 @@ export default () => {
     const classes = useStyles();
     const secondTextParagraph = (
         <Typography variant="h5" className={classes.textParagraph}>
-            Me interesa el desarrollo de aplicaciones web, tanto frontend como backend,
-            y en este momento busco trabajar en un equipo de desarrollo donde pueda aprender
-            y colaborar en grupo, aplicando las mejores prácticas de métodos ágiles y técnicas
-            de Ingeniería de Software.
+            I'm interested in web application development, both frontend and backend,
+            and working on a development team where I can learn and collaborate as a group.
+            Additionally, I like applying best practices of Agile methods and Software
+            Engineering techniques.
         </Typography>
     );
 
@@ -58,15 +58,16 @@ export default () => {
         <Grid container spacing={2}>
             <Grid item xs={12}>
                 <Typography variant="h3" className={classes.title}>
-                    Sobre mí
+                    About me
                 </Typography>
             </Grid>
             <Grid item xs={12} md={7} lg={6}>
                 <Typography variant="h5" className={classes.textParagraph}>
-                    Actualmente estudio en la Universidad de Buenos Aires y me encuentro en el cuarto año de
-                    la carrera de Ingeniería en Informática.
-                    En este tiempo he adquirido experiencia laboral desarrollando software en Python,
-                    JavaScript y PHP y a su vez poseo conocimientos en C, C++, Java, HTML y CSS.
+                    I'm a Software Engineering student at the University of Buenos Aires.
+                    Currently, I'm in the final year of university and have work experience
+                    developing software in Python, Golang, JavaScript, and PHP.
+                    I also have knowledge in C, C++, Java, AWS, Kubernetes, HTML, CSS,
+                    and Agile methods.
                 </Typography>
                 <Hidden mdDown>
                     <br/><br/>

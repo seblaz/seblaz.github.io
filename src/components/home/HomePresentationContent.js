@@ -85,8 +85,7 @@ export default () => {
                 <div className={classes.titleWrapper}>
                     <Typography variant="h1" className={classes.title}>Sebastián</Typography>
                     <Typography variant="h1" className={classes.title}>Blázquez</Typography>
-                    <Typography variant="h4" className={classes.subtitle}>Estudiante de Ingeniería en
-                        Informática</Typography>
+                    <Typography variant="h4" className={classes.subtitle}>Software Engineering Student</Typography>
                 </div>
             </Container>
         </Fragment>

@@ -58,7 +58,7 @@ export default ({linkedInUrl}) => {
                 className={classes.link}
                 onTouchEnd={(e) => e.stopPropagation()}
             >
-                Ver en <span className={classes.linked}>Linked</span>
+                See in <span className={classes.linked}>Linked</span>
                 <FontAwesomeIcon icon={faLinkedin} className={classes.icon}/>
             </a>
         </div>

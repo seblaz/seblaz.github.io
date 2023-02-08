@@ -52,7 +52,7 @@ export default () => {
             <Grid item className={classes.item}>
                 <div className={classes.itemContent}>
                     <FontAwesomeIcon icon={faGlobe}/>
-                    <Typography variant='h6' className={classes.text}> por Seblaz<Hidden only='xs'> | </Hidden></Typography>
+                    <Typography variant='h6' className={classes.text}> by Seblaz<Hidden only='xs'> | </Hidden></Typography>
                 </div>
             </Grid>
             <Grid item className={classes.item}>
@@ -64,7 +64,7 @@ export default () => {
                         rel='noopener noreferrer'
                     >
                         <FontAwesomeIcon icon={faCameraRetro}/>
-                        <Typography variant='h6' className={classes.text}> por Thomas Alan Has<Hidden smDown> | </Hidden></Typography>
+                        <Typography variant='h6' className={classes.text}> by Thomas Alan Has<Hidden smDown> | </Hidden></Typography>
                     </a>
                 </div>
             </Grid>

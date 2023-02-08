@@ -9,7 +9,7 @@ export default () => {
         <Fragment>
             <MetaInfo
                 title={'404 Not Found'}
-                description='Error, página no encontrada.'
+                description='Error, page not found.'
                 relativeUrl='/404'
                 image={preview}
             />

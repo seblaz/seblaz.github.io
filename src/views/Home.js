@@ -25,7 +25,7 @@ export default () => {
     return (
         <Fragment>
             <MetaInfo
-                description='Portfolio de Sebastián Blázquez.'
+                description="Sebastián Blázquez's Portfolio."
                 image={preview}
             />
             <HomePresentation/>

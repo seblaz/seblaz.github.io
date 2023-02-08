@@ -49,10 +49,10 @@ export default () => {
                         color="secondary"
                         size="large"
                         component={Link}
-                        to="/experiencia_laboral"
+                        to="/work_experience"
                         className={classes.button}
                     >
-                        Ver Experiencia laboral
+                        See Work Experience
                     </Button>
                 </Grid>
                 <Hidden smDown>
@@ -64,10 +64,10 @@ export default () => {
                         color="secondary"
                         size="large"
                         component={Link}
-                        to="/proyectos"
+                        to="/projects"
                         className={classes.button}
                     >
-                        Ver proyectos
+                        See Projects
                     </Button>
                 </Grid>
             </Hidden>
@@ -75,14 +75,14 @@ export default () => {
             <Hidden smUp>
                 <Grid item xs={12} className={classes.centered}>
                     <Button
-                        variant="outlined"
-                        color="secondary"
-                        size="medium"
-                        component={Link}
-                        to="/proyectos"
-                        className={`${classes.smallButton} ${classes.button}`}
+                      variant="outlined"
+                      color="secondary"
+                      size="medium"
+                      component={Link}
+                      to="/work_experience"
+                      className={`${classes.smallButton} ${classes.button}`}
                     >
-                        Ver proyectos
+                        See Work Experience
                     </Button>
                 </Grid>
                 <Grid item xs={12} className={classes.centered}>
@@ -91,10 +91,10 @@ export default () => {
                         color="secondary"
                         size="medium"
                         component={Link}
-                        to="/experiencia_laboral"
+                        to="/projects"
                         className={`${classes.smallButton} ${classes.button}`}
                     >
-                        Ver Experiencia laboral
+                        See Projects
                     </Button>
                 </Grid>
             </Hidden>

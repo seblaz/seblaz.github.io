@@ -18,28 +18,28 @@ const projects = [
     {
         title: 'Retro Snake',
         imgSource: matrix,
-        description: 'El clásico juego snake proyectado en una matriz de leds, controlable a través de Wi-Fi.',
+        description: 'The classic snake game projected on a LED matrix, controllable through Wi-Fi.',
         namespace: 'seblaz',
         repo: 'retro-snake',
         anchor: 'retro-snake'
     }, {
-        title: 'Prediciendo compras de usuarios',
+        title: 'Predicting user conversions',
         imgSource: predictingUserConversions,
-        description: 'Desarrollo de algoritmos de Machine Learning para calcular la probabilidad de que un usuario realice una compra en la plataforma de Trocafone.',
+        description: 'Development of machine learning algorithms to calculate the probability of a user making a purchase on the Trocafone platform.',
         namespace: 'seblaz',
         repo: 'Predicting-user-conversions',
         anchor: 'Predicting-user-conversions'
     }, {
         title: 'Final Fight',
         imgSource: finalFight,
-        description: 'Juego multijugador similar a Final Fight creado por Capcom, desarrollado como una aplicación de tipo cliente-servidor para funcionar sobre Linux.',
+        description: 'Multiplayer game similar to Final Fight created by Capcom, developed as a client-server type application to run on Linux.',
         namespace: 'seblaz',
         repo: 'Final-Fight',
         anchor: 'final-fight'
     }, {
-        title: 'Controlador de versiones para WinAutomation',
+        title: 'Version control system for WinAutomation',
         imgSource: winAutomation,
-        description: 'Herramienta para importar y exportar proyectos de WinAutomation, lo cual facilita la utilización de un controlador de versiones.',
+        description: 'Tool for importing and exporting WinAutomation projects, which facilitates the use of a version control system.',
         namespace: 'seblaz',
         repo: 'WinAutomation-version-control',
         anchor: 'winautomation-version-control',
@@ -47,14 +47,14 @@ const projects = [
     }, {
         title: 'Cuadernos Ya',
         imgSource: cuadernosYa,
-        description: 'Diseño de un nuevo tema para utilizar en Prestashop, una plataforma de ventas online.',
+        description: 'Design of a new theme to be used on Prestashop, an e-commerce platform.',
         namespace: 'seblaz',
         repo: 'CuadernosYa',
         anchor: 'cuadernosya-tema-violeta'
     }, {
-        title: 'Ayudante Virtual',
+        title: 'Virtual Assistant',
         imgSource: ayudanteVirtual,
-        description: 'Bot de Slack que sirve como asistente virtual para realizar consultas que no pueden ser compartidas en canales públicos.',
+        description: 'Slack bot serving as a virtual assistant for making queries that cannot be shared in public channels.',
         namespace: 'seblaz',
         repo: 'Ayudante-virtual',
         anchor: 'ayudante-virtual',

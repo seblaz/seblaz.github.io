@@ -31,7 +31,7 @@ export default () => {
                 onAbort={() => console.log('something changed')}
                 className={classes.downloadButton}
             >
-                Descargar curriculum
+                Download curriculum vitae
             </Button>
         </Grid>
     )
