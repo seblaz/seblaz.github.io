@@ -6,12 +6,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://seblaz.github.io/proyectos</loc>
+    <loc>https://seblaz.github.io/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://seblaz.github.io/experiencia_laboral</loc>
+    <loc>https://seblaz.github.io/work_experience</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
